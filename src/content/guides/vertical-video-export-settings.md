@@ -1,6 +1,6 @@
 ---
-title: "Vertical Video Export Settings for Clear, Watchable Clips"
-description: "Understand aspect ratio, resolution, frame rate, and export quality. Choose settings that fit the source and verify the finished file."
+title: 'Vertical Video Export Settings for Clear, Watchable Clips'
+description: 'Understand aspect ratio, resolution, frame rate, and export quality. Choose settings that fit the source and verify the finished file.'
 topic: publishing
 level: Beginner
 published: '2026-10-06'
@@ -28,12 +28,12 @@ A sharp original gives you room to crop. A low-resolution source can become visi
 
 For a common 1080p portrait workflow, 1080 × 1920 is a reasonable starting point. It is not a universal mandate from every platform. Use the destination's documentation for its current supported dimensions and upload limits.
 
-| Setting | Practical starting point | What to check |
-| --- | --- | --- |
-| Shape | 9:16 for a portrait-feed edit | Whether the subject and captions fit |
-| Resolution | 1080 × 1920 if the source supports it | Sharpness after cropping |
-| Frame rate | Match the relevant source workflow | Motion and audio synchronization |
-| Container | MP4 in a supported encoding | The destination's actual upload rules |
+| Setting    | Practical starting point              | What to check                         |
+| ---------- | ------------------------------------- | ------------------------------------- |
+| Shape      | 9:16 for a portrait-feed edit         | Whether the subject and captions fit  |
+| Resolution | 1080 × 1920 if the source supports it | Sharpness after cropping              |
+| Frame rate | Match the relevant source workflow    | Motion and audio synchronization      |
+| Container  | MP4 in a supported encoding           | The destination's actual upload rules |
 
 These are workflow defaults, not maximum limits or guaranteed best settings for every platform.
 
@@ -60,4 +60,3 @@ YouTube's official guidance currently supports Shorts up to three minutes under 
 If the picture is soft, inspect the original quality and crop before raising the bitrate. If captions are fuzzy, confirm they were generated at the project resolution and not enlarged from a small graphic. If audio drifts, compare the source and exported frame-rate workflow.
 
 Keep a short note with settings that work for your editor and destination. Recheck it when a platform changes its requirements or you change the kind of footage you use.
-

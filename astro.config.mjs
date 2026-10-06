@@ -8,4 +8,3 @@ export default defineConfig({
   integrations: [sitemap({ filter: (page) => !page.endsWith('/404/') }), icon()],
   build: { format: 'directory' },
 });
-

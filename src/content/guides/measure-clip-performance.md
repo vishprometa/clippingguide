@@ -1,11 +1,11 @@
 ---
-title: "How to Measure Clip Performance Beyond Views"
-description: "Use retention, completion, engagement, and editing notes to understand your clips. Compare similar posts and avoid drawing conclusions from one result."
+title: 'How to Measure Clip Performance Beyond Views'
+description: 'Use retention, completion, engagement, and editing notes to understand your clips. Compare similar posts and avoid drawing conclusions from one result.'
 topic: publishing
 level: Intermediate
 published: '2026-10-06'
 updated: '2026-10-06'
-answer: "Measure a clip against its purpose. Track the available watch-time and retention measures, meaningful engagement, and whether the clip helps viewers reach the original creator. Compare similar topics and lengths across several posts; one view count cannot prove an editing technique works."
+answer: 'Measure a clip against its purpose. Track the available watch-time and retention measures, meaningful engagement, and whether the clip helps viewers reach the original creator. Compare similar topics and lengths across several posts; one view count cannot prove an editing technique works.'
 image: recording
 featured: false
 order: 11

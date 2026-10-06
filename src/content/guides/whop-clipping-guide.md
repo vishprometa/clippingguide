@@ -1,6 +1,6 @@
 ---
-title: "Whop Clipping Guide: Campaigns, Submissions & Payouts"
-description: "Understand how Whop clipping campaigns work, what to check before editing, and why eligible views and approval matter more than raw views."
+title: 'Whop Clipping Guide: Campaigns, Submissions & Payouts'
+description: 'Understand how Whop clipping campaigns work, what to check before editing, and why eligible views and approval matter more than raw views.'
 topic: earning
 level: Beginner
 published: '2026-10-06'
@@ -28,13 +28,13 @@ Treat the campaign brief as the operational source of truth. A tutorial can expl
 
 Save the campaign URL and the current requirements. Check the following groups of information before editing:
 
-| Area | Questions to answer |
-| --- | --- |
-| Content | Which source files, creators, claims, and clip lengths are allowed? |
-| Accounts | Which platforms, accounts, and audience locations qualify? |
+| Area       | Questions to answer                                                                |
+| ---------- | ---------------------------------------------------------------------------------- |
+| Content    | Which source files, creators, claims, and clip lengths are allowed?                |
+| Accounts   | Which platforms, accounts, and audience locations qualify?                         |
 | Publishing | Are tags, mentions, disclosures, deadlines, or minimum posting durations required? |
-| Payment | What rate, thresholds, per-post limits, total caps, and budget rules apply? |
-| Submission | What evidence is required and how are approval and disputes handled? |
+| Payment    | What rate, thresholds, per-post limits, total caps, and budget rules apply?        |
+| Submission | What evidence is required and how are approval and disputes handled?               |
 
 If a requirement is unclear, resolve it before producing a batch. Do not infer permission for unrelated creator footage from joining a campaign.
 
@@ -73,4 +73,3 @@ If a submission is rejected, compare the reason with your saved brief and eviden
 Track approved receipts, production costs, and time across a group of posts. Raw view counts are not a complete measure of the work's value. Include editing, uploading, administration, and rejected submissions in the time you record.
 
 If the goal is predictable editing work, an agreed client fee may fit better than campaign rewards. If the goal is learning, a small authorized practice project may be a better first step than trying to scale immediately.
-

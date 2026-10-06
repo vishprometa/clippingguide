@@ -63,4 +63,3 @@ Campaign approval is another distinct question. A campaign can reject content fo
 Store the source URL, creator identity, permission or relevant guideline URL, date checked, intended platforms, commercial-use details, third-party asset notes, and any publication restrictions.
 
 If the creator asks for a change or removal, review the request and the governing permission promptly. A reliable clipping relationship depends on communication as well as editing quality.
-

@@ -1,0 +1,9 @@
+node_modules
+dist
+.astro
+.vercel
+artwork
+public
+package-lock.json
+docs/creator-feed-baseline.json
+

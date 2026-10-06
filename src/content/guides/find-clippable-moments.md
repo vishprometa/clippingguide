@@ -1,5 +1,5 @@
 ---
-title: "How to Find Good Moments to Clip"
+title: 'How to Find Good Moments to Clip'
 description: "Use a simple selection method to find complete ideas, strong reactions, and useful demonstrations without relying on a tool's viral score."
 topic: editing
 level: Beginner
@@ -24,10 +24,10 @@ Watch the recording once for meaning. Write down timestamps when you notice a cl
 
 Use a small table in a document or notebook:
 
-| Timestamp | Main idea | Context needed | Ending |
-| --- | --- | --- | --- |
+| Timestamp          | Main idea               | Context needed                      | Ending                  |
+| ------------------ | ----------------------- | ----------------------------------- | ----------------------- |
 | Illustrative 12:40 | Why the dough collapsed | Show the dough and name the mistake | The corrected technique |
-| Illustrative 28:10 | Unexpected game result | Identify the challenge | The player's reaction |
+| Illustrative 28:10 | Unexpected game result  | Identify the challenge              | The player's reaction   |
 
 These are examples of a logging format, not timestamps in a real recording. The log prevents you from repeatedly scrubbing through the same footage without making a decision.
 
@@ -58,4 +58,3 @@ If an automated selection begins halfway through a thought, repair the boundary 
 After publishing, record the chosen idea, opening, length, and the available performance measures. Compare similar candidates over several posts. A result from a completely different topic may say more about the audience than the editing.
 
 Use [the performance guide](/guides/measure-clip-performance/) to review the outcome. Over time, your candidate log becomes a record of editorial decisions you can learn from, instead of a collection of guesses.
-

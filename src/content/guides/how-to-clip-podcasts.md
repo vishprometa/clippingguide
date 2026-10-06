@@ -1,11 +1,11 @@
 ---
-title: "How to Clip a Podcast Without Losing the Conversation"
-description: "Choose a complete podcast answer, keep the question when it matters, reframe multiple speakers, and make captions easy to follow."
+title: 'How to Clip a Podcast Without Losing the Conversation'
+description: 'Choose a complete podcast answer, keep the question when it matters, reframe multiple speakers, and make captions easy to follow.'
 topic: editing
 level: Intermediate
 published: '2026-10-06'
 updated: '2026-10-06'
-answer: "A good podcast clip keeps one complete idea and the context needed to understand it. Include the question when the answer depends on it, follow the active speaker, correct names in captions, and link to the full episode."
+answer: 'A good podcast clip keeps one complete idea and the context needed to understand it. Include the question when the answer depends on it, follow the active speaker, correct names in captions, and link to the full episode.'
 image: recording
 featured: false
 order: 5
@@ -53,4 +53,3 @@ Creator permission and the episode's third-party assets still matter. A podcast 
 Batch editing can help with repeated tasks such as captions and export. It should not force every conversation into identical pacing. A demonstration, a serious explanation, and a quick joke each need different timing.
 
 Keep a list of candidate topics and avoid posting several edits of the same answer as though they are separate lessons. Check the [publishing checklist](/tools/clip-checklist/) and track performance by topic as well as edit style.
-

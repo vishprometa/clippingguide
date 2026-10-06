@@ -2,9 +2,24 @@
 import Base from '../../layouts/Base.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import { allGuides, topics } from '../../lib/site';
-export function getStaticPaths() { return topics.map(topic => ({ params: { topic: topic.id }, props: { topic } })); }
+export function getStaticPaths() {
+  return topics.map((topic) => ({ params: { topic: topic.id }, props: { topic } }));
+}
 const { topic } = Astro.props;
-const guides = (await allGuides()).filter(guide => guide.data.topic === topic.id);
+const guides = (await allGuides()).filter((guide) => guide.data.topic === topic.id);
 ---
-<Base title={`${topic.label}: Video Clipping Guides`} description={topic.description}><div class="wrap page-intro"><a class="text-link" href="/guides/">All guides</a><h1>{topic.title}.</h1><p>{topic.description}</p></div><section class="wrap library-grid topic-library">{guides.map(guide => <GuideCard guide={guide} image />)}</section></Base>
 
+<Base title={`${topic.label}: Video Clipping Guides`} description={topic.description}>
+  <div class="wrap page-intro">
+    <a class="text-link" href="/guides/">
+      All guides
+    </a>
+    <h1>{topic.title}.</h1>
+    <p>{topic.description}</p>
+  </div>
+  <section class="wrap library-grid topic-library">
+    {guides.map((guide) => (
+      <GuideCard guide={guide} image />
+    ))}
+  </section>
+</Base>

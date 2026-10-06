@@ -1,5 +1,47 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Clipping Guide for Agents & Developers" description="Read Clipping Guide through a public JSON index, Markdown guides, RSS, and sitemap. Source-attributed, dated content with no authentication required."><div class="wrap page-intro"><h1>Readable by people.<br />Accessible to agents.</h1><p>The same public guides, in formats that are easy to retrieve and cite.</p></div><div class="wrap plain-page prose"><div class="agent-links"><a href="/api/guides.json">JSON guide index</a><a href="/llms.txt">llms.txt content map</a><a href="/llms-full.txt">Complete guides as text</a><a href="/rss.xml">RSS updates</a></div><h2>How to retrieve a guide</h2><p>Use <code>/api/guides.json</code> to discover titles, summaries, topics, publication dates, updated dates, sources, canonical URLs, and Markdown URLs. Each guide is available at <code>/guides/&#123;slug&#125;.md</code> and as a normal HTML page.</p><h2>Citation & freshness</h2><p>Cite the guide's canonical HTML URL and check its updated date. For a platform's rules or product features, follow the linked official sources. Research-based comparisons should not be presented as independent hands-on tests.</p><h2>Public access</h2><p>Guide retrieval needs no API key, login, or JavaScript. The <code>llms.txt</code> map is a convenience for discovery, not a claim of preferential treatment in search or AI answers.</p><h2>Responsible reuse</h2><p>Link to the original guide when citing an answer. Preserve caveats, source attribution, and example labels. Please do not publish our entire guide collection as another website.</p></div></Base>
 
+<Base
+  title="Clipping Guide for Agents & Developers"
+  description="Read Clipping Guide through a public JSON index, Markdown guides, RSS, and sitemap. Source-attributed, dated content with no authentication required."
+>
+  <div class="wrap page-intro">
+    <h1>
+      Readable by people.
+      <br />
+      Accessible to agents.
+    </h1>
+    <p>The same public guides, in formats that are easy to retrieve and cite.</p>
+  </div>
+  <div class="wrap plain-page prose">
+    <div class="agent-links">
+      <a href="/api/guides.json">JSON guide index</a>
+      <a href="/llms.txt">llms.txt content map</a>
+      <a href="/llms-full.txt">Complete guides as text</a>
+      <a href="/rss.xml">RSS updates</a>
+    </div>
+    <h2>How to retrieve a guide</h2>
+    <p>
+      Use <code>/api/guides.json</code> to discover titles, summaries, topics, publication dates,
+      updated dates, sources, canonical URLs, and Markdown URLs. Each guide is available at{' '}
+      <code>/guides/&#123;slug&#125;.md</code> and as a normal HTML page.
+    </p>
+    <h2>Citation & freshness</h2>
+    <p>
+      Cite the guide's canonical HTML URL and check its updated date. For a platform's rules or
+      product features, follow the linked official sources. Research-based comparisons should not be
+      presented as independent hands-on tests.
+    </p>
+    <h2>Public access</h2>
+    <p>
+      Guide retrieval needs no API key, login, or JavaScript. The <code>llms.txt</code> map is a
+      convenience for discovery, not a claim of preferential treatment in search or AI answers.
+    </p>
+    <h2>Responsible reuse</h2>
+    <p>
+      Link to the original guide when citing an answer. Preserve caveats, source attribution, and
+      example labels. Please do not publish our entire guide collection as another website.
+    </p>
+  </div>
+</Base>

@@ -5,9 +5,62 @@ import { allGuides, topics } from '../../lib/site';
 import { Icon } from 'astro-icon/components';
 const guides = await allGuides();
 ---
-<Base title="Video Clipping Guides & Tutorials" description="Browse practical video clipping tutorials: beginner basics, CapCut editing, captions, publishing, campaign earnings, and measuring performance.">
-  <div class="wrap page-intro"><p class="eyebrow">The guide library</p><h1>Find your next good edit.</h1><p>Practical answers. Enough detail to put them to work.</p></div>
-  <section class="wrap library"><div class="library-controls" id="search"><label class="search-box"><Icon name="ph:magnifying-glass" /><span class="sr-only">Search guides</span><input type="search" id="guide-search" placeholder="Search a topic, tool, or question" autocomplete="off" /></label><div class="filter-buttons" aria-label="Filter guides by topic"><button class="filter active" type="button" data-topic="all" aria-pressed="true">All guides</button>{topics.map(topic => <button class="filter" type="button" data-topic={topic.id} aria-pressed="false">{topic.label}</button>)}</div></div><p id="search-status" class="search-status" role="status">{guides.length} guides to explore</p><div class="library-grid">{guides.map(guide => <div class="searchable-guide" data-topic={guide.data.topic} data-title={guide.data.title.toLowerCase()} data-search={`${guide.data.title} ${guide.data.description} ${guide.body}`.toLowerCase()}><GuideCard guide={guide} image /></div>)}</div><div id="search-empty" class="empty-state" hidden><h2>No guides found.</h2><p>Try a broader phrase, or clear the topic filter.</p><button class="button secondary" type="button" id="reset-search">Show all guides</button></div></section>
+
+<Base
+  title="Video Clipping Guides & Tutorials"
+  description="Browse practical video clipping tutorials: beginner basics, CapCut editing, captions, publishing, campaign earnings, and measuring performance."
+>
+  <div class="wrap page-intro">
+    <p class="eyebrow">The guide library</p>
+    <h1>Find your next good edit.</h1>
+    <p>Practical answers. Enough detail to put them to work.</p>
+  </div>
+  <section class="wrap library">
+    <div class="library-controls" id="search">
+      <label class="search-box">
+        <Icon name="ph:magnifying-glass" />
+        <span class="sr-only">Search guides</span>
+        <input
+          type="search"
+          id="guide-search"
+          placeholder="Search a topic, tool, or question"
+          autocomplete="off"
+        />
+      </label>
+      <div class="filter-buttons" aria-label="Filter guides by topic">
+        <button class="filter active" type="button" data-topic="all" aria-pressed="true">
+          All guides
+        </button>
+        {topics.map((topic) => (
+          <button class="filter" type="button" data-topic={topic.id} aria-pressed="false">
+            {topic.label}
+          </button>
+        ))}
+      </div>
+    </div>
+    <p id="search-status" class="search-status" role="status">
+      {guides.length} guides to explore
+    </p>
+    <div class="library-grid">
+      {guides.map((guide) => (
+        <div
+          class="searchable-guide"
+          data-topic={guide.data.topic}
+          data-title={guide.data.title.toLowerCase()}
+          data-search={`${guide.data.title} ${guide.data.description} ${guide.body}`.toLowerCase()}
+        >
+          <GuideCard guide={guide} image />
+        </div>
+      ))}
+    </div>
+    <div id="search-empty" class="empty-state" hidden>
+      <h2>No guides found.</h2>
+      <p>Try a broader phrase, or clear the topic filter.</p>
+      <button class="button secondary" type="button" id="reset-search">
+        Show all guides
+      </button>
+    </div>
+  </section>
 </Base>
 <script>
   const input = document.querySelector<HTMLInputElement>('#guide-search')!;
@@ -17,16 +70,40 @@ const guides = await allGuides();
   function update() {
     const terms = input.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
     let count = 0;
-    cards.forEach(card => { const match = (topic === 'all' || card.dataset.topic === topic) && terms.every(term => card.dataset.search?.includes(term)); card.hidden = !match; if (match) count++; });
-    const score = (card: HTMLElement) => terms.reduce((total, term) => total + (card.dataset.title?.includes(term) ? 2 : 0), 0);
-    cards.filter(card => !card.hidden).sort((a, b) => score(b) - score(a)).forEach(card => card.parentElement?.append(card));
-    document.querySelector('#search-status')!.textContent = `${count} ${count === 1 ? 'guide' : 'guides'} to explore`;
+    cards.forEach((card) => {
+      const match =
+        (topic === 'all' || card.dataset.topic === topic) &&
+        terms.every((term) => card.dataset.search?.includes(term));
+      card.hidden = !match;
+      if (match) count++;
+    });
+    const score = (card: HTMLElement) =>
+      terms.reduce((total, term) => total + (card.dataset.title?.includes(term) ? 2 : 0), 0);
+    cards
+      .filter((card) => !card.hidden)
+      .sort((a, b) => score(b) - score(a))
+      .forEach((card) => card.parentElement?.append(card));
+    document.querySelector('#search-status')!.textContent =
+      `${count} ${count === 1 ? 'guide' : 'guides'} to explore`;
     (document.querySelector('#search-empty') as HTMLElement).hidden = count > 0;
-    filters.forEach(filter => { const selected = filter.dataset.topic === topic; filter.classList.toggle('active', selected); filter.setAttribute('aria-pressed', String(selected)); });
+    filters.forEach((filter) => {
+      const selected = filter.dataset.topic === topic;
+      filter.classList.toggle('active', selected);
+      filter.setAttribute('aria-pressed', String(selected));
+    });
   }
   input.addEventListener('input', update);
-  filters.forEach(filter => filter.addEventListener('click', () => { topic = filter.dataset.topic!; update(); }));
-  document.querySelector('#reset-search')?.addEventListener('click', () => { input.value = ''; topic = 'all'; update(); input.focus(); });
+  filters.forEach((filter) =>
+    filter.addEventListener('click', () => {
+      topic = filter.dataset.topic!;
+      update();
+    }),
+  );
+  document.querySelector('#reset-search')?.addEventListener('click', () => {
+    input.value = '';
+    topic = 'all';
+    update();
+    input.focus();
+  });
   if (location.hash === '#search') input.focus();
 </script>
-

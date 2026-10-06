@@ -1,11 +1,11 @@
 ---
-title: "Captions for Video Clips: Make Every Word Easy to Follow"
-description: "Correct automatic transcripts, choose readable caption styling, identify speakers accessibly, and keep text clear of platform controls."
+title: 'Captions for Video Clips: Make Every Word Easy to Follow'
+description: 'Correct automatic transcripts, choose readable caption styling, identify speakers accessibly, and keep text clear of platform controls.'
 topic: editing
 level: Beginner
 published: '2026-10-06'
 updated: '2026-10-06'
-answer: "Good captions reproduce the speech accurately, appear at the right time, and stay readable at a normal phone size. Correct automatic transcription, use short natural phrases, identify speakers when needed, and keep text clear of interface controls."
+answer: 'Good captions reproduce the speech accurately, appear at the right time, and stay readable at a normal phone size. Correct automatic transcription, use short natural phrases, identify speakers when needed, and keep text clear of interface controls.'
 image: editing
 featured: false
 order: 6
@@ -55,4 +55,3 @@ For a short-video workflow, burned-in text may be a practical choice, but do not
 Watch once with the sound off. Ask whether the text communicates the content and whether relevant non-speech sounds need to be indicated. Then watch with sound and look for captions appearing noticeably early or late.
 
 Finally, review the title and any text you added yourself. Those statements should be as accurate as the captions. An excellent transcription cannot fix a misleading title or an edit that removes necessary context.
-

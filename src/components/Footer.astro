@@ -1,12 +1,41 @@
 ---
 import { Icon } from 'astro-icon/components';
 ---
+
 <footer class="site-footer">
   <div class="wrap footer-grid">
-    <div><a href="/" class="brand">clipping<span class="brand-light">guide</span><span class="brand-period">.</span></a><p>Good moments deserve good edits.<br />Practical guides for the people making them.</p></div>
-    <div><h2>Learn</h2><a href="/start-here/">Start here</a><a href="/guides/">Browse guides</a><a href="/tools/">Free tools</a><a href="/creators/">Creators we follow</a><a href="/rss.xml">RSS feed <Icon name="ph:rss" /></a></div>
+    <div>
+      <a href="/" class="brand">
+        clipping<span class="brand-light">guide</span>
+        <span class="brand-period">.</span>
+      </a>
+      <p>
+        Good moments deserve good edits.
+        <br />
+        Practical guides for the people making them.
+      </p>
+    </div>
+    <div>
+      <h2>Learn</h2>
+      <a href="/start-here/">Start here</a>
+      <a href="/guides/">Browse guides</a>
+      <a href="/tools/">Free tools</a>
+      <a href="/creators/">Creators we follow</a>
+      <a href="/rss.xml">
+        RSS feed <Icon name="ph:rss" />
+      </a>
+    </div>
 
-    <div><h2>Clipping Guide</h2><a href="/about/">About & editorial standards</a><a href="/privacy/">Privacy</a><a href="/for-agents/">For agents & developers</a><a href="/sitemap-index.xml">Sitemap</a></div>
+    <div>
+      <h2>Clipping Guide</h2>
+      <a href="/about/">About & editorial standards</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/for-agents/">For agents & developers</a>
+      <a href="/sitemap-index.xml">Sitemap</a>
+    </div>
   </div>
-  <div class="wrap footer-bottom"><span>© {new Date().getFullYear()} Clipping Guide</span><span>Independent. Free to read. Made for learning.</span></div>
+  <div class="wrap footer-bottom">
+    <span>© {new Date().getFullYear()} Clipping Guide</span>
+    <span>Independent. Free to read. Made for learning.</span>
+  </div>
 </footer>

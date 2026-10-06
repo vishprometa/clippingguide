@@ -1,11 +1,11 @@
 ---
-title: "How to Start Clipping: Make Your First Video Clip"
-description: "A practical first-project walkthrough: choose authorized footage, identify one complete idea, trim it, add captions, and check the export."
+title: 'How to Start Clipping: Make Your First Video Clip'
+description: 'A practical first-project walkthrough: choose authorized footage, identify one complete idea, trim it, add captions, and check the export.'
 topic: getting-started
 level: Beginner
 published: '2026-10-06'
 updated: '2026-10-06'
-answer: "Start with one recording you own or have permission to use. Pick a complete moment, trim it without changing its meaning, reframe for your destination, correct the captions, and watch the exported file before posting."
+answer: 'Start with one recording you own or have permission to use. Pick a complete moment, trim it without changing its meaning, reframe for your destination, correct the captions, and watch the exported file before posting.'
 image: editing
 featured: false
 order: 2

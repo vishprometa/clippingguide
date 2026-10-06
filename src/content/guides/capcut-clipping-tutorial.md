@@ -1,11 +1,11 @@
 ---
-title: "How to Clip a Video in CapCut: A Beginner Workflow"
-description: "Trim a longer recording, reframe it vertically, correct auto captions, balance speech, and review your finished CapCut export."
+title: 'How to Clip a Video in CapCut: A Beginner Workflow'
+description: 'Trim a longer recording, reframe it vertically, correct auto captions, balance speech, and review your finished CapCut export.'
 topic: editing
 level: Beginner
 published: '2026-10-06'
 updated: '2026-10-06'
-answer: "In CapCut, create a project, import authorized footage, split around the moment you want, and remove the extra sections. Set the canvas, adjust the crop, generate and correct captions, balance audio, then export and inspect the finished file."
+answer: 'In CapCut, create a project, import authorized footage, split around the moment you want, and remove the extra sections. Set the canvas, adjust the crop, generate and correct captions, balance audio, then export and inspect the finished file.'
 image: editing
 featured: false
 order: 3
@@ -59,4 +59,3 @@ Choose resolution and frame rate appropriate to your footage and destination. Fo
 Watch the exported file from beginning to end. Look for caption timing changes, accidental black frames, missing audio, and a cut that ends before the final word. Also inspect whether the chosen features introduced a watermark or require a plan upgrade before publishing.
 
 Use the [clip checklist](/tools/clip-checklist/) and keep your project file. Save a reusable project only after the first export works. A template is useful when it preserves good defaults, not when it locks every clip into the same inappropriate crop or pacing.
-

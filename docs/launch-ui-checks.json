@@ -1,0 +1,26 @@
+{
+  "widths": [
+    320,
+    375,
+    390,
+    768,
+    1024,
+    1280,
+    1536,
+    1920
+  ],
+  "initialIssue": "Header overflow at 320px; corrected with a narrow-phone spacing rule.",
+  "interactionChecks": [
+    "Guide search prioritizes title matches",
+    "Search empty state and recovery",
+    "Calculator caps and deductions produce correct displayed values",
+    "Invalid eligible percentage clears the result and shows a helpful error",
+    "Checklist saving is opt-in and survives reload when enabled"
+  ],
+  "pendingVerification": [],
+  "verified": [
+    "No horizontal overflow at 320, 375, 390, 768, 1024, 1280, 1536, and 1920 pixels after the narrow-phone fix.",
+    "Light and dark themes checked visually.",
+    "Article contents collapse at phone width; desktop contents remain available."
+  ]
+}

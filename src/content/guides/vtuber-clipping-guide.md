@@ -1,6 +1,6 @@
 ---
-title: "VTuber Clipping Guide: Context, Subtitles & Creator Rules"
-description: "Start clipping VTuber streams responsibly: check agency rules, preserve context, credit the VOD, handle translations carefully, and edit for the viewer."
+title: 'VTuber Clipping Guide: Context, Subtitles & Creator Rules'
+description: 'Start clipping VTuber streams responsibly: check agency rules, preserve context, credit the VOD, handle translations carefully, and edit for the viewer.'
 topic: getting-started
 level: Beginner
 published: '2026-10-06'
@@ -69,4 +69,3 @@ Choose one or a few creators whose content you understand and are permitted to u
 Avoid claiming an official relationship unless the creator has established one. Permission to publish clips and being hired as an official editor are different things. If you want paid editing work, document your workflow and agree the scope directly.
 
 Before posting, run the [publishing checklist](/tools/clip-checklist/). For monetization expectations, read [the earnings guide](/guides/clipping-earnings/) and the platform's current rules.
-
