@@ -17,6 +17,10 @@ Read the actual relevant video through its public transcript, captions, or audio
 
 Cover clipping, video-editing workflows, captions, audio, source selection, Shorts, publishing, campaign operations, analytics, and meaningful product changes. Skip unrelated hardware news, conference appearances, thin promotional clips, and topics already answered well without a material update.
 
+## Search demand comes first
+
+User instruction, October 6, 2026: write blogs only for what people are actually searching for. Read search-strategy.md and the dated search-demand.json ledger. Validate a relevant query and its intent before planning an article. Creator uploads are research inputs, not automatic publishing triggers. Unknown keyword volumes and difficulty must remain unknown. Prefer improving an existing page when intents overlap.
+
 ## Turn a lesson into an original guide
 
 Prefer a substantive update to an existing guide when the search intent overlaps. A new guide needs a distinct reader question, an early direct answer, original explanation, practical steps or a worked example, useful caveats, a source attribution and original video link, and links to relevant existing guides.

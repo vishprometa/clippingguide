@@ -59,3 +59,7 @@ Choose resolution and frame rate appropriate to your footage and destination. Fo
 Watch the exported file from beginning to end. Look for caption timing changes, accidental black frames, missing audio, and a cut that ends before the final word. Also inspect whether the chosen features introduced a watermark or require a plan upgrade before publishing.
 
 Use the [clip checklist](/tools/clip-checklist/) and keep your project file. Save a reusable project only after the first export works. A template is useful when it preserves good defaults, not when it locks every clip into the same inappropriate crop or pacing.
+
+## If auto captions do not work
+
+Check whether text failed to generate or whether generated text is hidden. The [caption troubleshooting guide](/guides/capcut-captions-not-working/) provides a small-sample test and separate checks for generation, visibility, and export.

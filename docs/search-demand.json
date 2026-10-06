@@ -1,0 +1,151 @@
+{
+  "method": "Google autocomplete, directional query evidence; no volume or difficulty estimates",
+  "queries": [
+    {
+      "seed": "clipping guide",
+      "suggestions": [
+        "clipping guide",
+        "clipping guide for show pigs",
+        "clipping guide reddit",
+        "clipper guides",
+        "clipper guide sizes",
+        "clip guided diffusion",
+        "clipper guide numbers",
+        "clipper guide combs",
+        "clipper guide lengths",
+        "clipper guide sizes mm"
+      ],
+      "source": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=clipping%20guide",
+      "checked": "2026-10-06",
+      "region": "US",
+      "language": "en",
+      "monthlyVolume": null,
+      "difficulty": null
+    },
+    {
+      "seed": "how to start clipping",
+      "suggestions": [
+        "how to start clipping",
+        "how to start clipping on tiktok",
+        "how to start clipping on youtube",
+        "how to start clipping and making money",
+        "how to start clipping for streamers",
+        "how to start clipping on whop",
+        "how to start clipping on social media",
+        "how to start clipping reddit",
+        "how to start clipping on instagram",
+        "how to start clipping for free"
+      ],
+      "source": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=how%20to%20start%20clipping",
+      "checked": "2026-10-06",
+      "region": "US",
+      "language": "en",
+      "monthlyVolume": null,
+      "difficulty": null
+    },
+    {
+      "seed": "whop clipping",
+      "suggestions": [
+        "whop clipping reddit",
+        "whop clipping",
+        "whop clipping tutorial",
+        "whop clipping discord",
+        "whop clipping meaning",
+        "whop clipping campaign reddit",
+        "whop clipping community",
+        "whop clipping earn money",
+        "whop clipping for brands",
+        "whop clipping jobs"
+      ],
+      "source": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=whop%20clipping",
+      "checked": "2026-10-06",
+      "region": "US",
+      "language": "en",
+      "monthlyVolume": null,
+      "difficulty": null
+    },
+    {
+      "seed": "video clipping",
+      "suggestions": [
+        "video clipping",
+        "video clipping software",
+        "video clipping tool",
+        "video clipping app",
+        "video clipping ai",
+        "video clipping software free",
+        "video clipping free",
+        "video clipping website",
+        "video clipping ai free",
+        "video clipping online"
+      ],
+      "source": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=video%20clipping",
+      "checked": "2026-10-06",
+      "region": "US",
+      "language": "en",
+      "monthlyVolume": null,
+      "difficulty": null
+    },
+    {
+      "seed": "vtuber clipping",
+      "suggestions": [
+        "vtuber clipping guide",
+        "vtuber clipping",
+        "vtuber clipping software",
+        "vtuber examples",
+        "vtuber explained",
+        "what app does vtuber use"
+      ],
+      "source": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=vtuber%20clipping",
+      "checked": "2026-10-06",
+      "region": "US",
+      "language": "en",
+      "monthlyVolume": null,
+      "difficulty": null
+    },
+    {
+      "seed": "capcut captions",
+      "suggestions": [
+        "capcut captions",
+        "capcut captions one word at a time",
+        "capcut captions not working",
+        "capcut captions free",
+        "capcut captions generator",
+        "capcut captions glitching",
+        "capcut captions stuck at 45",
+        "capcut captions not showing full word",
+        "capcut captions disappear too fast",
+        "capcut captions not showing"
+      ],
+      "source": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=capcut%20captions",
+      "checked": "2026-10-06",
+      "region": "US",
+      "language": "en",
+      "monthlyVolume": null,
+      "difficulty": null
+    }
+  ],
+  "decisions": [
+    {
+      "query": "capcut captions not working",
+      "action": "publish original troubleshooting guide",
+      "url": "https://clippingguide.com/guides/capcut-captions-not-working/",
+      "evidence": "Present in Google autocomplete; matching official CapCut troubleshooting documentation reviewed.",
+      "volume": null,
+      "difficulty": null
+    },
+    {
+      "query": "how to start clipping for streamers; how to start clipping for free",
+      "action": "improve existing beginner guide instead of creating duplicate intent pages",
+      "url": "https://clippingguide.com/guides/how-to-start-clipping/",
+      "evidence": "Both variants present in Google autocomplete.",
+      "volume": null,
+      "difficulty": null
+    },
+    {
+      "query": "how to start clipping on tiktok",
+      "action": "research queue; current official full documentation could not be retrieved through the search tool, so a detailed new guide is pending source verification",
+      "volume": null,
+      "difficulty": null
+    }
+  ]
+}

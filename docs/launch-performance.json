@@ -12,5 +12,19 @@
     "cumulative-layout-shift": "0",
     "total-blocking-time": "0\u00a0ms"
   },
-  "scope": "Homepage. A lab measurement, not field data or a ranking prediction."
+  "scope": "Homepage. A lab measurement, not field data or a ranking prediction.",
+  "desktopVerification": {
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": "0.5\u00a0s",
+      "total-blocking-time": "0\u00a0ms",
+      "cumulative-layout-shift": "0"
+    },
+    "note": "Repeated after the first desktop run showed a large unattributed task while other local processes were active."
+  }
 }

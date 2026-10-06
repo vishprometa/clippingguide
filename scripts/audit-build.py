@@ -87,6 +87,10 @@ def main():
             elif url.fragment and target.resolve() in by_path and unquote(url.fragment) not in by_path[target.resolve()].ids:
                 errors.append(f"{label}: missing anchor {href}")
     index = json.loads((ROOT / "api/guides.json").read_text())
+    source_ids = {path.stem for path in (ROOT.parent / "src/content/guides").glob("*.md")}
+    built_ids = {guide["id"] for guide in index["guides"]}
+    if source_ids != built_ids:
+        errors.append("Built guide index differs from the authored guides; rebuild before release")
     for guide in index["guides"]:
         if not target_file(urlparse(guide["url"]).path).exists() or not target_file(urlparse(guide["markdown"]).path).exists():
             errors.append(f"Guide {guide['id']} is missing an HTML or Markdown endpoint")
@@ -99,4 +103,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

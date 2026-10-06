@@ -55,3 +55,7 @@ For a short-video workflow, burned-in text may be a practical choice, but do not
 Watch once with the sound off. Ask whether the text communicates the content and whether relevant non-speech sounds need to be indicated. Then watch with sound and look for captions appearing noticeably early or late.
 
 Finally, review the title and any text you added yourself. Those statements should be as accurate as the captions. An excellent transcription cannot fix a misleading title or an edit that removes necessary context.
+
+## When captions fail
+
+If captions never generate, appear outside the picture, or disappear from an export, use the [CapCut caption troubleshooting guide](/guides/capcut-captions-not-working/) to identify which stage failed before changing the project.

@@ -63,3 +63,13 @@ In a short [Primal Video lesson](https://www.youtube.com/watch?v=1dd3zo7ELj4), J
 Keep the first exported version. Write one thing that worked and one thing to improve. Your next project can focus on a single skill: cleaner captions, more deliberate opening cuts, or following speakers within a vertical frame.
 
 Do not judge the entire skill by the view count of a first post. The immediate goal is a complete, understandable, correctly exported clip. Once that is reliable, use [performance data](/guides/measure-clip-performance/) to refine your choices.
+
+## How to start clipping for streamers
+
+Start with a streamer whose content you understand and are permitted to use. Confirm whether they want finished files for their own account or allow you to publish on yours. Save the VOD link, permissions, and any creator rules with the project. Choose a complete moment and retain enough context for a viewer who missed the stream.
+
+Agree the scope before a paid project: who chooses the moments, where the files will be posted, the caption language, revisions, and delivery date. The [permissions guide](/guides/clipping-permissions/) and [VTuber workflow](/guides/vtuber-clipping-guide/) cover the checks that differ from editing your own footage.
+
+## How to start clipping for free
+
+Practice on an authorized recording using editing features available in your existing tools. Verify that the final export meets your needs before committing to a paid feature. Our [tool-selection guide](/guides/clipping-tools/) explains how to compare the actual workflow and current plan restrictions.
