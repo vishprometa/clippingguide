@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+const groups = [
+ { title: 'Permission & context', items: ['I own the footage or have permission that covers this use.', 'Music, artwork, and other third-party material are cleared too.', 'The edit preserves the speaker’s meaning and necessary context.', 'I checked any campaign rules, embargoes, or creator guidelines.', 'The description links to and credits the original source.'] },
+ { title: 'The edit', items: ['The clip opens on a clear idea, action, or honest question.', 'A new viewer can understand it without watching the whole video.', 'The ending completes the idea instead of cutting it off.', 'Faces, gameplay, and important visuals remain visible after cropping.', 'Voice audio is clear and music does not overpower it.'] },
+ { title: 'Captions & export', items: ['I corrected caption mistakes, names, and numbers.', 'Captions are readable and do not sit beneath platform controls.', 'I watched the exported file on a phone, with and without sound.', 'The resolution, aspect ratio, and duration match the destination.', 'The title and thumbnail accurately represent the clip.'] },
+];
+---
+<Base title="Video Clip Publishing Checklist" description="Check permissions, context, editing, captions, sound, and export before publishing a video clip. Free interactive checklist with optional local progress saving."><div class="wrap page-intro"><a class="text-link" href="/tools/">Free tools</a><h1>One last look before publish.</h1><p>A practical check for the details that are easy to miss.</p></div><section class="wrap checklist-layout"><div>{groups.map((group, groupIndex) => <fieldset class="checklist-group" style="border:0;padding:0"><legend><h2>{group.title}</h2></legend>{group.items.map((item, index) => <label class="checklist-item"><input type="checkbox" data-check-id={`${groupIndex}-${index}`} /><span>{item}</span></label>)}</fieldset>)}</div><aside class="result-panel"><h2>Your publishing check</h2><p id="check-status" class="checklist-status" role="status">0 of 15 checked</p><p>Use this as a working checklist. Completing it does not certify permissions or guarantee platform approval.</p><label class="cap-toggle"><input type="checkbox" id="save-progress" /> Save progress on this device</label><p id="storage-message" role="status">Progress is not saved unless you choose this option.</p><div class="checklist-actions"><button class="button secondary" type="button" id="reset-checklist">Reset checklist</button><button class="button secondary" type="button" id="download-checklist">Download text</button></div><noscript><p>You can check the boxes without JavaScript. Progress counts, saving, and downloads need JavaScript.</p></noscript></aside></section></Base>
+<script>
+  const checks = [...document.querySelectorAll<HTMLInputElement>('[data-check-id]')];
+  const save = document.querySelector<HTMLInputElement>('#save-progress')!;
+  const storageKey = 'cg-checklist-v1';
+  const message = document.querySelector('#storage-message')!;
+  function update() {
+    const count = checks.filter(input => input.checked).length;
+    document.querySelector('#check-status')!.textContent = `${count} of ${checks.length} checked${count === checks.length ? '. Ready for your final review.' : ''}`;
+    if (!save.checked) return;
+    try { localStorage.setItem(storageKey, JSON.stringify(checks.filter(input => input.checked).map(input => input.dataset.checkId))); message.textContent = 'Progress saved on this device.'; } catch { message.textContent = 'This browser could not save progress. Your current checks still work.'; }
+  }
+  try { const stored = localStorage.getItem(storageKey); if (stored) { const ids = JSON.parse(stored); if (Array.isArray(ids)) { save.checked = true; checks.forEach(input => input.checked = ids.includes(input.dataset.checkId)); } } } catch {}
+  checks.forEach(input => input.addEventListener('change', update));
+  save.addEventListener('change', () => { if (!save.checked) { try { localStorage.removeItem(storageKey); } catch {} message.textContent = 'Saving is off. These checks are only for this visit.'; } update(); });
+  document.querySelector('#reset-checklist')?.addEventListener('click', () => { checks.forEach(input => input.checked = false); update(); });
+  document.querySelector('#download-checklist')?.addEventListener('click', () => {
+    const text = `Clipping Guide publishing checklist\nhttps://clippingguide.com/tools/clip-checklist/\n\n${checks.map(input => `[${input.checked ? 'x' : ' '}] ${input.nextElementSibling?.textContent}`).join('\n')}\n`;
+    const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));
+    const link = document.createElement('a'); link.href = url; link.download = 'clipping-guide-checklist.txt'; link.click(); URL.revokeObjectURL(url);
+  });
+  update();
+</script>
+

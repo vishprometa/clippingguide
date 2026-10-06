@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import GuideCard from '../components/GuideCard.astro';
+import { Icon } from 'astro-icon/components';
+import { allGuides, topics } from '../lib/site';
+const guides = await allGuides();
+const featured = guides.filter(guide => guide.data.featured).slice(0, 4);
+---
+<Base title="Clipping Guide: Learn to Clip, Edit & Publish Better Videos" description="Learn video clipping with practical beginner guides, editing tutorials, Whop campaign explainers, and free tools. Make your next clip with confidence.">
+  <section class="wrap hero">
+    <div class="hero-copy"><p class="eyebrow">A good place to start</p><h1>Better clips.<br /><span>Start here.</span></h1><p class="hero-description">Find the moment. Make the edit. Learn the craft of short-form video, one useful guide at a time.</p><div class="hero-buttons"><a class="button" href="/start-here/">Make your first clip <Icon name="ph:arrow-right" /></a><a class="text-link" href="/guides/">Explore the guides <Icon name="ph:arrow-up-right" /></a></div></div>
+    <div class="hero-visual"><img src="/images/hero.webp" alt="An original illustration of one ocean wave captured across four glass frames." width="1536" height="1024" fetchpriority="high" /><div class="visual-caption"><span>A long video. A moment worth keeping.</span><Icon name="ph:scissors" /></div></div>
+  </section>
+  <section class="wrap path-section"><div class="section-intro"><h2>Where do you want to begin?</h2><p>Pick what you need today. You can learn the rest as you go.</p></div><div class="path-grid">{topics.map(topic => <a class="path-item" href={`/topics/${topic.id}/`}><span class="path-icon"><Icon name={topic.icon} /></span><div><h3>{topic.title}</h3><p>{topic.description}</p></div><Icon class="path-arrow" name="ph:arrow-up-right" /></a>)}</div></section>
+  <section class="wrap featured-section"><div class="section-intro"><h2>The essentials, explained well.</h2><p>Clear answers to the questions every clipper starts with.</p></div><div class="featured-grid">{featured.map((guide, index) => <GuideCard guide={guide} image={index < 2} />)}</div></section>
+  <section class="wrap learn-panel"><div class="learn-image"><img src="/images/editing.webp" alt="An illustrative creator workspace with an editing controller, headphones, and a laptop." width="1536" height="1024" loading="lazy" /></div><div class="learn-copy"><p class="eyebrow">From watching to making</p><h2>Your first clip doesn't need to be perfect.</h2><p>Start with one video you have permission to use. Find a complete idea, trim the distractions, and make it easy to watch.</p><a class="button" href="/guides/how-to-start-clipping/">Follow the beginner guide <Icon name="ph:arrow-right" /></a></div></section>
+  <section class="wrap tools-section"><div class="section-intro"><h2>A little less guesswork.</h2><p>Free tools to help you check your work and understand the numbers.</p></div><div class="tool-links"><a href="/tools/earnings-calculator/"><Icon name="ph:calculator" /><div><h3>Clipping earnings calculator</h3><p>Turn eligible views and campaign rates into a clear estimate.</p></div><Icon name="ph:arrow-up-right" /></a><a href="/tools/clip-checklist/"><Icon name="ph:check-square" /><div><h3>Before-you-publish checklist</h3><p>Check the story, sound, captions, permissions, and export.</p></div><Icon name="ph:arrow-up-right" /></a></div></section>
+  <section class="wrap editorial-note"><Icon name="ph:book-open" /><div><h2>Useful information. Clear expectations.</h2><p>Clipping Guide is an independent resource. We link to official sources, explain the tradeoffs, and label examples. No income promises or invented success stories.</p><a class="text-link" href="/about/">How we write our guides <Icon name="ph:arrow-up-right" /></a></div></section>
+</Base>
+

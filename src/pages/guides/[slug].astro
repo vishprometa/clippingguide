@@ -1,0 +1,22 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { Icon } from 'astro-icon/components';
+import { allGuides, guideUrl, readingTime, topicLabel, formatDate, SITE } from '../../lib/site';
+export async function getStaticPaths() { return (await allGuides()).map(guide => ({ params: { slug: guide.id }, props: { guide } })); }
+const { guide } = Astro.props;
+const { Content, headings } = await render(guide);
+const related = (await allGuides()).filter(item => item.id !== guide.id && item.data.topic === guide.data.topic).slice(0, 2);
+const url = `${SITE}${guideUrl(guide)}`;
+const schema = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'Article', '@id': `${url}#article`, headline: guide.data.title, description: guide.data.description, image: `${SITE}/images/${guide.data.image}.webp`, datePublished: `${guide.data.published}T12:00:00-07:00`, dateModified: `${guide.data.updated}T12:00:00-07:00`, author: { '@type': 'Organization', name: 'Clipping Guide editorial', url: `${SITE}/about/` }, publisher: { '@id': `${SITE}/#organization` }, mainEntityOfPage: url, inLanguage: 'en' },
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: SITE }, { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE}/guides/` }, { '@type': 'ListItem', position: 3, name: guide.data.title, item: url }] },
+] };
+---
+<Base title={guide.data.title} description={guide.data.description} image={`/images/${guide.data.image}.webp`} schema={schema} article={{ published: guide.data.published, updated: guide.data.updated, topic: topicLabel(guide.data.topic) }}>
+  <article class="wrap article-page"><header class="article-header"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/guides/">Guides</a><span>/</span><a href={`/topics/${guide.data.topic}/`}>{topicLabel(guide.data.topic)}</a></nav><p class="meta">{topicLabel(guide.data.topic)} <span>{guide.data.level}</span></p><h1>{guide.data.title}</h1><p class="article-deck">{guide.data.description}</p><div class="article-byline"><a href="/about/">Clipping Guide editorial</a><span>Updated <time datetime={guide.data.updated}>{formatDate(guide.data.updated)}</time></span><span>{readingTime(guide.body)} min read</span></div></header>
+  <div class="article-layout"><aside class="article-sidebar"><details class="article-toc" open><summary>In this guide</summary><nav aria-label="In this guide">{headings.filter(heading => heading.depth === 2).map(heading => <a href={`#${heading.slug}`}>{heading.text}</a>)}</nav></details><script is:inline>const toc = document.querySelector(".article-toc"); const mobileToc = matchMedia("(max-width: 767px)"); const syncToc = () => { toc.open = !mobileToc.matches; }; syncToc(); mobileToc.addEventListener("change", syncToc);</script><a class="download-link" href={`/guides/${guide.id}.md`}><Icon name="ph:file-text" /> Read as Markdown</a></aside><div class="article-content"><div class="quick-answer"><h2>The quick answer</h2><p>{guide.data.answer}</p></div><div class="prose"><Content /></div>{guide.data.sources.length > 0 && <section class="sources"><h2>Sources & further reading</h2><p>Official documentation checked on {formatDate(guide.data.updated)}. Platform features and rules can change.</p><ul>{guide.data.sources.map(source => <li><a href={source.url} rel="noopener noreferrer">{source.title}<Icon name="ph:arrow-up-right" /></a></li>)}</ul></section>}<div class="article-bottom"><a href="/about/#corrections">Suggest a correction</a><a href="/tools/clip-checklist/">Check your next clip <Icon name="ph:arrow-right" /></a></div></div></div></article>
+  {related.length > 0 && <section class="wrap related-section"><h2>Keep learning.</h2><div class="related-grid">{related.map(item => <GuideCard guide={item} />)}</div></section>}
+</Base>
+
