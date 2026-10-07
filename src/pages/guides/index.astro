@@ -49,7 +49,7 @@ const guides = await allGuides();
           data-title={guide.data.title.toLowerCase()}
           data-search={`${guide.data.title} ${guide.data.description} ${guide.body}`.toLowerCase()}
         >
-          <GuideCard guide={guide} image />
+          <GuideCard guide={guide} />
         </div>
       ))}
     </div>
@@ -66,7 +66,12 @@ const guides = await allGuides();
   const input = document.querySelector<HTMLInputElement>('#guide-search')!;
   const filters = [...document.querySelectorAll<HTMLButtonElement>('.filter')];
   const cards = [...document.querySelectorAll<HTMLElement>('.searchable-guide')];
-  let topic = 'all';
+  const parameters = new URLSearchParams(location.search);
+  input.value = parameters.get('q') ?? '';
+  const requestedTopic = parameters.get('topic');
+  let topic = filters.some((filter) => filter.dataset.topic === requestedTopic)
+    ? requestedTopic!
+    : 'all';
   function update() {
     const terms = input.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
     let count = 0;
@@ -105,5 +110,6 @@ const guides = await allGuides();
     update();
     input.focus();
   });
+  update();
   if (location.hash === '#search') input.focus();
 </script>

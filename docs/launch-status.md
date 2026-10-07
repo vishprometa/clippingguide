@@ -24,3 +24,7 @@ Replace only the default apex URL redirect and www parking record. Preserve mail
 After DNS resolves to Vercel, verify HTTPS on the apex, the www redirect, the homepage, a guide, the guide JSON and Markdown endpoint, robots, sitemap, and the analytics script. Then create/verify the Ahrefs project, start a Site Audit crawl, and enable an appropriate recurring crawl supported by the current plan. Verify Google Search Console ownership and submit https://clippingguide.com/sitemap-index.xml.
 
 For recurring runs, this DNS/account state is an already-known setup blocker. Stay quiet while it is unchanged; check the public Vercel preview for deployment health, and notify when the canonical domain begins serving the site or a new actionable failure appears. Do not treat a Vercel login page or a Namecheap parking page as a successful site check.
+
+## Visual revision
+
+The user rejected the decorative ocean hero on October 6. The revised design is a compact, search-first editorial publication. Do not reintroduce large decorative generated images or repeat stock-style thumbnails in the guide library. Preserve the original artwork as archived source assets.

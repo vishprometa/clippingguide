@@ -4,136 +4,163 @@ import GuideCard from '../components/GuideCard.astro';
 import { Icon } from 'astro-icon/components';
 import { allGuides, topics } from '../lib/site';
 const guides = await allGuides();
-const featured = guides.filter((guide) => guide.data.featured).slice(0, 4);
+const selectedIds = [
+  'how-to-start-clipping',
+  'capcut-captions-not-working',
+  'whop-clipping-guide',
+  'vtuber-clipping-guide',
+];
+const selected = selectedIds.map((id) => guides.find((guide) => guide.id === id)).filter(Boolean);
+const questions = [
+  {
+    text: 'How do I start clipping?',
+    href: '/guides/how-to-start-clipping/',
+    detail: 'A first-project walkthrough',
+  },
+  {
+    text: 'Why are my CapCut captions not working?',
+    href: '/guides/capcut-captions-not-working/',
+    detail: 'Find the failure and fix the right part',
+  },
+  {
+    text: 'How does clipping on Whop work?',
+    href: '/guides/whop-clipping-guide/',
+    detail: 'Campaigns, eligible views, and submissions',
+  },
+  {
+    text: 'What should a VTuber clipper know?',
+    href: '/guides/vtuber-clipping-guide/',
+    detail: 'Context, subtitles, and creator rules',
+  },
+];
 ---
 
 <Base
-  title="Clipping Guide: Learn to Clip, Edit & Publish Better Videos"
-  description="Learn video clipping with practical beginner guides, editing tutorials, Whop campaign explainers, and free tools. Make your next clip with confidence."
+  title="Clipping Guide: Practical Video Clipping Tutorials & Answers"
+  description="Find clear answers about video clipping, CapCut, streamer edits, captions, and Whop campaigns. Free guides and practical tools for your next edit."
+  image="/images/editing.webp"
 >
-  <section class="wrap hero">
-    <div class="hero-copy">
-      <p class="eyebrow">A good place to start</p>
-      <h1>
-        Better clips.
-        <br />
-        <span>Start here.</span>
-      </h1>
-      <p class="hero-description">
-        Find the moment. Make the edit. Learn the craft of short-form video, one useful guide at a
-        time.
-      </p>
-      <div class="hero-buttons">
-        <a class="button" href="/start-here/">
-          Make your first clip <Icon name="ph:arrow-right" />
-        </a>
-        <a class="text-link" href="/guides/">
-          Explore the guides <Icon name="ph:arrow-up-right" />
-        </a>
+  <div class="publication-home wrap">
+    <section class="publication-intro">
+      <div>
+        <p class="publication-label">The video clipping reference</p>
+        <h1 class="publication-title">Video clipping, clearly explained.</h1>
+        <p class="publication-description">
+          Practical tutorials for editing short videos, publishing them well, and understanding how
+          clipping campaigns work.
+        </p>
+        <form class="home-search" action="/guides/" method="get" role="search">
+          <Icon name="ph:magnifying-glass" />
+          <label class="sr-only" for="home-query">
+            Search guides
+          </label>
+          <input
+            id="home-query"
+            name="q"
+            type="search"
+            placeholder="Search a question or topic"
+            autocomplete="off"
+          />
+          <button type="submit">
+            Search <Icon name="ph:arrow-right" />
+          </button>
+        </form>
+        <nav class="home-topics" aria-label="Browse guide topics">
+          {topics.map((topic) => (
+            <a href={`/topics/${topic.id}/`}>
+              {topic.label}
+              <Icon name="ph:arrow-up-right" />
+            </a>
+          ))}
+        </nav>
       </div>
-    </div>
-    <div class="hero-visual">
-      <img
-        src="/images/hero.webp"
-        alt="An original illustration of one ocean wave captured across four glass frames."
-        width="1536"
-        height="1024"
-        fetchpriority="high"
-      />
-      <div class="visual-caption">
-        <span>A long video. A moment worth keeping.</span>
+      <aside class="beginner-note">
         <Icon name="ph:scissors" />
-      </div>
-    </div>
-  </section>
-  <section class="wrap path-section">
-    <div class="section-intro">
-      <h2>Where do you want to begin?</h2>
-      <p>Pick what you need today. You can learn the rest as you go.</p>
-    </div>
-    <div class="path-grid">
-      {topics.map((topic) => (
-        <a class="path-item" href={`/topics/${topic.id}/`}>
-          <span class="path-icon">
-            <Icon name={topic.icon} />
-          </span>
-          <div>
-            <h3>{topic.title}</h3>
-            <p>{topic.description}</p>
-          </div>
-          <Icon class="path-arrow" name="ph:arrow-up-right" />
+        <h2>New to clipping?</h2>
+        <p>Make one complete clip. Build the skills as you go.</p>
+        <ol>
+          <li>
+            <a href="/guides/find-clippable-moments/">Choose a useful moment</a>
+          </li>
+          <li>
+            <a href="/guides/capcut-clipping-tutorial/">Make a clean first edit</a>
+          </li>
+          <li>
+            <a href="/tools/clip-checklist/">Check it before posting</a>
+          </li>
+        </ol>
+        <a class="text-link" href="/start-here/">
+          Follow the learning path <Icon name="ph:arrow-right" />
         </a>
-      ))}
-    </div>
-  </section>
-  <section class="wrap featured-section">
-    <div class="section-intro">
-      <h2>The essentials, explained well.</h2>
-      <p>Clear answers to the questions every clipper starts with.</p>
-    </div>
-    <div class="featured-grid">
-      {featured.map((guide, index) => (
-        <GuideCard guide={guide} image={index < 2} />
-      ))}
-    </div>
-  </section>
-  <section class="wrap learn-panel">
-    <div class="learn-image">
-      <img
-        src="/images/editing.webp"
-        alt="An illustrative creator workspace with an editing controller, headphones, and a laptop."
-        width="1536"
-        height="1024"
-        loading="lazy"
-      />
-    </div>
-    <div class="learn-copy">
-      <p class="eyebrow">From watching to making</p>
-      <h2>Your first clip doesn't need to be perfect.</h2>
-      <p>
-        Start with one video you have permission to use. Find a complete idea, trim the
-        distractions, and make it easy to watch.
-      </p>
-      <a class="button" href="/guides/how-to-start-clipping/">
-        Follow the beginner guide <Icon name="ph:arrow-right" />
-      </a>
-    </div>
-  </section>
-  <section class="wrap tools-section">
-    <div class="section-intro">
-      <h2>A little less guesswork.</h2>
-      <p>Free tools to help you check your work and understand the numbers.</p>
-    </div>
-    <div class="tool-links">
-      <a href="/tools/earnings-calculator/">
-        <Icon name="ph:calculator" />
-        <div>
-          <h3>Clipping earnings calculator</h3>
-          <p>Turn eligible views and campaign rates into a clear estimate.</p>
+      </aside>
+    </section>
+    <section class="question-section">
+      <h2>Start with your question.</h2>
+      <div class="question-grid">
+        {questions.map((question) => (
+          <a href={question.href}>
+            <div>
+              <h3>{question.text}</h3>
+              <p>{question.detail}</p>
+            </div>
+            <Icon name="ph:arrow-up-right" />
+          </a>
+        ))}
+      </div>
+    </section>
+    <div class="publication-columns">
+      <section class="essential-guides">
+        <div class="publication-section-heading">
+          <h2>Practical guides.</h2>
+          <a href="/guides/">
+            All {guides.length} guides <Icon name="ph:arrow-right" />
+          </a>
         </div>
-        <Icon name="ph:arrow-up-right" />
-      </a>
-      <a href="/tools/clip-checklist/">
-        <Icon name="ph:check-square" />
-        <div>
-          <h3>Before-you-publish checklist</h3>
-          <p>Check the story, sound, captions, permissions, and export.</p>
+        <div class="editorial-guides">
+          {selected.map((guide) => guide && <GuideCard guide={guide} />)}
         </div>
-        <Icon name="ph:arrow-up-right" />
-      </a>
+      </section>
+      <aside class="publication-sidebar">
+        <section>
+          <h2>Free tools</h2>
+          <a class="sidebar-tool" href="/tools/earnings-calculator/">
+            <Icon name="ph:calculator" />
+            <div>
+              <h3>Earnings calculator</h3>
+              <p>Work through eligible views, rates, caps, and expenses.</p>
+            </div>
+            <Icon name="ph:arrow-up-right" />
+          </a>
+          <a class="sidebar-tool" href="/tools/clip-checklist/">
+            <Icon name="ph:check-square" />
+            <div>
+              <h3>Publishing checklist</h3>
+              <p>A final pass for context, captions, sound, and permissions.</p>
+            </div>
+            <Icon name="ph:arrow-up-right" />
+          </a>
+        </section>
+        <section class="reference-note">
+          <h2>Understand the basics.</h2>
+          <p>
+            What clipping is, how the workflow fits together, and which payment models are
+            different.
+          </p>
+          <a class="text-link" href="/guides/what-is-clipping/">
+            Read the complete guide <Icon name="ph:arrow-up-right" />
+          </a>
+        </section>
+        <section class="reference-note">
+          <h2>Sources you can check.</h2>
+          <p>
+            Guides link to official documentation and show when they were updated. Examples are
+            labeled.
+          </p>
+          <a class="text-link" href="/about/">
+            Our editorial standards <Icon name="ph:arrow-up-right" />
+          </a>
+        </section>
+      </aside>
     </div>
-  </section>
-  <section class="wrap editorial-note">
-    <Icon name="ph:book-open" />
-    <div>
-      <h2>Useful information. Clear expectations.</h2>
-      <p>
-        Clipping Guide is an independent resource. We link to official sources, explain the
-        tradeoffs, and label examples. No income promises or invented success stories.
-      </p>
-      <a class="text-link" href="/about/">
-        How we write our guides <Icon name="ph:arrow-up-right" />
-      </a>
-    </div>
-  </section>
+  </div>
 </Base>

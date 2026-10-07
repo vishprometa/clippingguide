@@ -17,7 +17,7 @@ interface Props {
 const {
   title,
   description,
-  image = '/images/hero.webp',
+  image = '/images/editing.webp',
   schema,
   noindex = false,
   article,
@@ -59,7 +59,7 @@ const baseSchema = {
       name="robots"
       content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}
     />
-    <meta name="theme-color" content="#c7432d" />
+    <meta name="theme-color" content="#2e56b0" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href={manropeFont} as="font" type="font/woff2" crossorigin />
     <link rel="alternate" type="application/rss+xml" title="Clipping Guide" href="/rss.xml" />

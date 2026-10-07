@@ -4,23 +4,11 @@ import { Icon } from 'astro-icon/components';
 import { guideUrl, readingTime, topicLabel } from '../lib/site';
 interface Props {
   guide: CollectionEntry<'guides'>;
-  image?: boolean;
 }
-const { guide, image = false } = Astro.props;
+const { guide } = Astro.props;
 ---
 
-<article class:list={['guide-card', { 'with-image': image }]}>
-  {image && (
-    <a href={guideUrl(guide)} tabindex="-1" aria-hidden="true">
-      <img
-        src={`/images/${guide.data.image}.webp`}
-        alt=""
-        width="1536"
-        height="1024"
-        loading="lazy"
-      />
-    </a>
-  )}
+<article class="guide-card">
   <div class="guide-card-content">
     <p class="meta">
       {topicLabel(guide.data.topic)} <span>{readingTime(guide.body)} min read</span>

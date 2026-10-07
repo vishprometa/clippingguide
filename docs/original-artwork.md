@@ -31,3 +31,7 @@ Web asset: public/images/recording.webp
 Prompt:
 
 Use case: photorealistic-natural. Asset type: supporting editorial image for Clipping Guide podcast and stream clipping guides. Landscape 3:2 close-up photograph of a dark graphite podcast microphone with a fine mesh grille and coral-red cable, foreground in exquisite focus, modern recording studio background softly out of focus with a bright teal and warm coral color atmosphere. The microphone is placed slightly right of center. Understated high-end editorial style, physical believable equipment, soft daylight edge light, rich texture, no person, no text, no logos, no watermark.
+
+## Revision status
+
+The ocean hero was rejected by the user and removed from the site experience. Original files are preserved as archived assets. The current homepage and guide listings use an editorial text layout; the editing image remains available for social metadata.

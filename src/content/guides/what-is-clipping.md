@@ -6,7 +6,7 @@ level: Beginner
 published: '2026-10-06'
 updated: '2026-10-06'
 answer: 'Video clipping means taking a useful, interesting, or entertaining moment from a longer video and editing it into a shorter, self-contained piece. A good clip preserves the original meaning, works for a new viewer, and uses footage you have the right to publish.'
-image: hero
+image: editing
 featured: true
 order: 1
 sources:

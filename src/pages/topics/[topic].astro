@@ -19,7 +19,7 @@ const guides = (await allGuides()).filter((guide) => guide.data.topic === topic.
   </div>
   <section class="wrap library-grid topic-library">
     {guides.map((guide) => (
-      <GuideCard guide={guide} image />
+      <GuideCard guide={guide} />
     ))}
   </section>
 </Base>
