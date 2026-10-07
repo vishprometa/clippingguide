@@ -22,6 +22,14 @@ The generic phrase clipping guide has mixed intent, including animal grooming an
 
 These priorities are based on relevance and gaps in existing coverage, not a claimed volume ranking. Preserve existing useful supporting guides and canonical URLs. Do not create a separate article for every keyword variation.
 
+## Ranking evidence and review
+
+Read ranking-baseline.json when assessing search performance. The October 7 Google desktop spot check for clipping guide (US/English requested, pws=0) showed Whop as the first web result and no clippingguide.com link on the inspected first page. This observation is not a universal rank. The main guide was freshly confirmed indexed, while Search Console Performance and Links reports remained processing. Unknown positions, link counts, volume, and difficulty remain unknown.
+
+Prioritize the existing main clipping guide for broad introductory intent, the beginner guide for first-project questions, and focused troubleshooting/platform guides for their own distinct tasks. Improve original examples, usable resources, and source-backed explanations. The main guide now has an original practice exercise and worksheet; do not produce another generic overview just to add pages.
+
+Once Search Console data is available, record query, landing page, country, date range, impressions, clicks, CTR, and average position together. Compare equivalent weekly and 28-day periods and prioritize demonstrated reader needs. A manual first-page spot check, sitemap discovery count, Ahrefs Health Score, and indexing confirmation must not be reported as ranking gains. October 21 is an initial evidence-review checkpoint, not a promised ranking date. Google recommends allowing a few weeks to assess SEO changes and notes that some effects can take months: https://developers.google.com/search/docs/fundamentals/seo-starter-guide.
+
 ## Required gate for future publishing
 
 Before a new blog, record the actual query, evidence source, checked date, region, intent, existing-page overlap, proposed destination, and useful difference. A seed echoed unchanged without relevant suggestions is not enough. Use Search Console impression/query data and Ahrefs metrics when available. Public search suggestions and actual live results may supply directional evidence; label their limits. Creator videos are sources to answer those questions, not automatic triggers for new articles.

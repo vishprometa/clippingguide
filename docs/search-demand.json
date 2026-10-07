@@ -185,6 +185,26 @@
         "https://support.google.com/youtube/answer/14075157?hl=en",
         "https://support.google.com/youtube/answer/1311392?hl=en"
       ]
+    },
+    {
+      "query": "clipping guide; How can I learn clipping?; What does clipping mean?; What is clipping in YouTube",
+      "action": "improve the existing main clipping guide with an original practice exercise and clearer navigation",
+      "status": "validated search intent; publication tracked in launch and runtime records",
+      "url": "https://clippingguide.com/guides/what-is-clipping/",
+      "demandChecked": "2026-10-07",
+      "region": "US requested with gl=us",
+      "language": "en",
+      "evidenceSource": "https://www.google.com/search?q=clipping+guide&hl=en&gl=us&pws=0",
+      "evidence": "Manual Google first-page inspection showed video clipping guides, People also ask questions about learning and meaning, and the related query What is clipping in YouTube. Whop was the first web result. Clippingguide.com was absent from the inspected first-page result links.",
+      "limitations": "Single desktop spot check in signed-in Brave with pws=0 requested. Results may vary by location, session and time; no universal rank, search volume or difficulty inferred. Search Console Performance and Links reports are still processing.",
+      "monthlyVolume": null,
+      "difficulty": null,
+      "existingOverlap": "The existing main guide already defines video clipping and links the beginner, permissions, tools and earnings guides. Keep that canonical URL and avoid another generic overview page.",
+      "usefulDifference": "Add an original fictional source transcript, a worked keep/remove analysis, a freely accessible practice script and planning worksheet, and a source-backed distinction between YouTube Clips and separately published short videos. Put the main guide in the first homepage question.",
+      "sourceChecked": "2026-10-07",
+      "sources": [
+        "https://support.google.com/youtube/answer/10332730?hl=en"
+      ]
     }
   ]
 }
