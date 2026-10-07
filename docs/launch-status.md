@@ -14,9 +14,10 @@ Updated October 6, 2026.
 ## Search setup
 
 - Google Search Console domain property sc-domain:clippingguide.com is verified through the Namecheap DNS TXT record.
-- The sitemap index and direct URL sitemap now both report Success in the signed-in Search Console sitemap report, with last-read dates of October 6, 2026. The direct URL sitemap reports 28 discovered pages. The initial Could not fetch status is resolved. Sitemap discovery does not confirm indexing or rankings; the interrupted follow-up homepage inspection provided no new index status.
+- The sitemap index and direct URL sitemap both report Success in the signed-in Search Console sitemap report, with last-read dates of October 6, 2026. The direct URL sitemap reports 28 discovered pages. The initial Could not fetch status is resolved. Discovery does not establish indexing of every submitted URL or rankings for particular queries.
 - Google's Live URL Inspection confirms the homepage is available to Google.
-- The homepage indexing request was accepted and placed in Google's priority crawl queue. This is not confirmation that it has been indexed.
+- The homepage is confirmed indexed: signed-in URL Inspection reports URL is on Google and Page is indexed, verified October 6, 2026. The earlier indexing request was accepted into Google's priority crawl queue. Remaining useful pages and query rankings still need separate monitoring.
+- Search Console's Performance report currently says Processing data, please check again in a day or so. Clicks, impressions, and positions are unavailable; do not record them as zero or invent rankings.
 - Ahrefs project Clipping Guide (ID 10492999) is created and ownership is verified through the published HTML tag. The first crawl reported Health Score 100 and zero errors. Weekly audits are scheduled Tuesdays, 5:00-5:59 PM, Pacific Time (Los Angeles). The account is on the Free plan; API keyword metrics/rank tracking are unavailable, and no paid upgrade is authorized.
 
 ## Publishing and monitoring

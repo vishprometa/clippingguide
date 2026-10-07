@@ -5,6 +5,13 @@
   "homepageLiveTest": "URL is available to Google",
   "homepageIndexingRequest": "Accepted into the priority crawl queue",
   "lastKnownIndexStatusBeforeRequest": "URL is unknown to Google",
+  "homepageIndexingConfirmed": true,
+  "homepageIndexStatus": "URL is on Google",
+  "homepagePageIndexingStatus": "Page is indexed",
+  "homepageIndexStatusCheckRunStartedAt": "2026-10-07T03:21:13.009Z",
+  "homepageIndexingEvidenceScreenshot": "_screenshots/google-homepage-indexed-2026-10-06.png",
+  "performanceReportStatus": "Processing data, please check again in a day or so",
+  "performanceMetrics": null,
   "sitemaps": [
     {
       "url": "https://clippingguide.com/sitemap-index.xml",
@@ -32,10 +39,10 @@
     "GET and HEAD with a Googlebot user-agent return 200.",
     "Ahrefs successfully crawled the site and reported zero errors."
   ],
-  "nextAction": "Monitor indexed pages and actual query/page performance; avoid repeated requests for unchanged URLs. Reattempt the read-only homepage inspection when the signed-in Brave monitoring window is available.",
+  "nextAction": "Monitor indexing coverage for the remaining useful pages and actual query/page performance once Google finishes processing the report. Avoid repeated indexing requests for unchanged URLs.",
   "crawlingGuidance": "A few days to a few weeks; inclusion is not guaranteed.",
   "source": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
-  "interpretation": "The signed-in Search Console sitemap report now confirms Success for both submitted files, with 28 pages discovered in the direct sitemap. Discovery does not confirm indexing or rankings. The homepage inspection was interrupted when Brave changed windows, so no new homepage indexing state is claimed.",
+  "interpretation": "The signed-in Search Console URL Inspection confirms the homepage is on Google and indexed. Both submitted sitemaps report Success, with 28 pages discovered in the direct sitemap. These observations do not establish indexing of all 28 URLs or rankings for particular queries. The Performance report is still processing; absent metrics are unknown, not zero.",
   "sitemapStatusCheckRunStartedAt": "2026-10-07T02:21:26.808Z",
   "sitemapStatusEvidence": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Aclippingguide.com"
 }
