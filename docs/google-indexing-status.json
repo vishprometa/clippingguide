@@ -9,12 +9,14 @@
     {
       "url": "https://clippingguide.com/sitemap-index.xml",
       "submissionAccepted": true,
-      "initialStatus": "Could not fetch / not yet read"
+      "initialStatus": "Couldn't fetch",
+      "lastRead": "No date shown in the initial report"
     },
     {
       "url": "https://clippingguide.com/sitemap-0.xml",
       "submissionAccepted": true,
-      "initialStatus": "Could not fetch / not yet read"
+      "initialStatus": "Couldn't fetch",
+      "lastRead": "No date shown in the initial report"
     }
   ],
   "diagnostics": [
@@ -26,5 +28,6 @@
   ],
   "nextAction": "Monitor Google processing and actual query/page performance; avoid repeated requests for unchanged URLs.",
   "crawlingGuidance": "A few days to a few weeks; inclusion is not guaranteed.",
-  "source": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl"
+  "source": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
+  "interpretation": "Google processing/fetch has not been confirmed in the sitemap report. Cause is not established; independent XML/HTTP checks and the Google live homepage test pass."
 }
