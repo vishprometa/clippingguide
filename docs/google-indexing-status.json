@@ -10,6 +10,16 @@
   "homepagePageIndexingStatus": "Page is indexed",
   "homepageIndexStatusCheckRunStartedAt": "2026-10-07T03:21:13.009Z",
   "homepageIndexingEvidenceScreenshot": "_screenshots/google-homepage-indexed-2026-10-06.png",
+  "confirmedIndexedGuides": [
+    {
+      "url": "https://clippingguide.com/guides/what-is-clipping/",
+      "indexStatus": "URL is on Google",
+      "pageIndexingStatus": "Page is indexed",
+      "validBreadcrumbItems": 1,
+      "checkedRunStartedAt": "2026-10-07T06:17:13.413Z",
+      "evidenceScreenshot": "_screenshots/google-what-is-clipping-indexed-2026-10-06.png"
+    }
+  ],
   "performanceReportStatus": "Processing data, please check again in a day or so",
   "performanceMetrics": null,
   "sitemaps": [
@@ -42,7 +52,7 @@
   "nextAction": "Monitor indexing coverage for the remaining useful pages and actual query/page performance once Google finishes processing the report. Avoid repeated indexing requests for unchanged URLs.",
   "crawlingGuidance": "A few days to a few weeks; inclusion is not guaranteed.",
   "source": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
-  "interpretation": "The signed-in Search Console URL Inspection confirms the homepage is on Google and indexed. Both submitted sitemaps report Success, with 28 pages discovered in the direct sitemap. These observations do not establish indexing of all 28 URLs or rankings for particular queries. The Performance report is still processing; absent metrics are unknown, not zero.",
+  "interpretation": "Signed-in Search Console URL Inspection confirms the homepage and the What is clipping guide are on Google and indexed. Both submitted sitemaps report Success, with 28 pages discovered in the direct sitemap. These observations do not establish indexing of all 28 URLs or rankings for particular queries. The aggregate Page indexing and Performance reports are still processing; absent metrics are unknown, not zero.",
   "sitemapStatusCheckRunStartedAt": "2026-10-07T02:21:26.808Z",
   "sitemapStatusEvidence": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Aclippingguide.com"
 }
