@@ -14,7 +14,7 @@ Updated October 6, 2026.
 ## Search setup
 
 - Google Search Console domain property sc-domain:clippingguide.com is verified through the Namecheap DNS TXT record.
-- The sitemap index and direct URL sitemap were submitted successfully. Google's initial processing status is Could not fetch / not yet read; public XML validation, normal HTTP fetches, and GET/HEAD with a Googlebot user-agent succeed. This status remains pending and is monitored. Google's Live URL Inspection independently confirms homepage fetchability.
+- The sitemap index and direct URL sitemap now both report Success in the signed-in Search Console sitemap report, with last-read dates of October 6, 2026. The direct URL sitemap reports 28 discovered pages. The initial Could not fetch status is resolved. Sitemap discovery does not confirm indexing or rankings; the interrupted follow-up homepage inspection provided no new index status.
 - Google's Live URL Inspection confirms the homepage is available to Google.
 - The homepage indexing request was accepted and placed in Google's priority crawl queue. This is not confirmation that it has been indexed.
 - Ahrefs project Clipping Guide (ID 10492999) is created and ownership is verified through the published HTML tag. The first crawl reported Health Score 100 and zero errors. Weekly audits are scheduled Tuesdays, 5:00-5:59 PM, Pacific Time (Los Angeles). The account is on the Free plan; API keyword metrics/rank tracking are unavailable, and no paid upgrade is authorized.
@@ -23,7 +23,7 @@ Updated October 6, 2026.
 
 The hourly heartbeat clipping-guide-creator-updates-and-site-health is active. Publishing is search-led, as instructed by the user. Read search-strategy.md and search-demand.json. Creator videos are research inputs for an identified query, not automatic publication triggers. Unknown volume and difficulty remain unknown.
 
-Preserve the live design and URLs. Do not reintroduce the rejected decorative imagery. Monitor the verified Ahrefs project and Google sitemap processing. Do not repeat known pending-state notifications while nothing actionable changed, and do not submit repeated indexing requests for the same URL in an effort to speed it up.
+Preserve the live design and URLs. Do not reintroduce the rejected decorative imagery. Monitor the verified Ahrefs project, Google indexing and query performance, and any new sitemap failure. Do not repeat unchanged-state notifications or submit repeated indexing requests for the same URL in an effort to speed it up.
 
 ## Baseline audit follow-up
 
