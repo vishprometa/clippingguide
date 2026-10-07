@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-06",
+  "checkedAt": "2026-10-07",
   "property": "sc-domain:clippingguide.com",
   "ownershipVerified": true,
   "homepageLiveTest": "URL is available to Google",
@@ -18,6 +18,14 @@
       "validBreadcrumbItems": 1,
       "checkedRunStartedAt": "2026-10-07T06:17:13.413Z",
       "evidenceScreenshot": "_screenshots/google-what-is-clipping-indexed-2026-10-06.png"
+    },
+    {
+      "url": "https://clippingguide.com/guides/how-to-start-clipping-on-tiktok/",
+      "indexStatus": "URL is on Google",
+      "pageIndexingStatus": "Page is indexed",
+      "validBreadcrumbItems": 1,
+      "checkedRunStartedAt": "2026-10-07T08:19:43.686Z",
+      "evidenceScreenshot": "_screenshots/google-tiktok-guide-indexed-2026-10-07.png"
     }
   ],
   "performanceReportStatus": "Processing data, please check again in a day or so",
@@ -30,7 +38,7 @@
       "initialLastRead": "No date shown in the initial report",
       "currentStatus": "Success",
       "lastRead": "2026-10-06",
-      "discoveredPages": 0
+      "discoveredPages": 28
     },
     {
       "url": "https://clippingguide.com/sitemap-0.xml",
@@ -44,7 +52,7 @@
   ],
   "diagnostics": [
     "Both XML files return 200 and parse correctly.",
-    "The direct sitemap contains 28 canonical HTML URLs.",
+    "The public direct sitemap contains 29 canonical HTML URLs after the TikTok guide publication. Google's sitemap report still shows 28 discovered pages with an October 6 last-read date.",
     "Robots permits crawling.",
     "GET and HEAD with a Googlebot user-agent return 200.",
     "Ahrefs successfully crawled the site and reported zero errors."
@@ -52,7 +60,7 @@
   "nextAction": "Monitor indexing coverage for the remaining useful pages and actual query/page performance once Google finishes processing the report. Avoid repeated indexing requests for unchanged URLs.",
   "crawlingGuidance": "A few days to a few weeks; inclusion is not guaranteed.",
   "source": "https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl",
-  "interpretation": "Signed-in Search Console URL Inspection confirms the homepage and the What is clipping guide are on Google and indexed. Both submitted sitemaps report Success, with 28 pages discovered in the direct sitemap. These observations do not establish indexing of all 28 URLs or rankings for particular queries. The aggregate Page indexing and Performance reports are still processing; absent metrics are unknown, not zero.",
+  "interpretation": "Signed-in Search Console URL Inspection confirms the homepage, What is clipping guide, and TikTok first-post guide are on Google and indexed. Both submitted sitemap reports show Success and 28 discovered pages with an October 6 last-read date; the current public sitemap has 29 URLs. These observations do not establish indexing of every submitted URL or rankings for particular queries. The aggregate Page indexing and Performance reports are still processing; absent metrics are unknown, not zero.",
   "sitemapStatusCheckRunStartedAt": "2026-10-07T02:21:26.808Z",
   "sitemapStatusEvidence": "https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Aclippingguide.com"
 }
