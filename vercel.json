@@ -63,29 +63,5 @@
         }
       ]
     }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "clippingguide.vercel.app"
-        }
-      ],
-      "destination": "https://clippingguide.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "clippingguide-somnath6646s-projects.vercel.app"
-        }
-      ],
-      "destination": "https://clippingguide.com/:path*",
-      "permanent": true
-    }
   ]
 }

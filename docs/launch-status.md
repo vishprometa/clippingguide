@@ -5,7 +5,7 @@ Updated October 6, 2026.
 ## Live deployment
 
 - Canonical site: https://clippingguide.com, verified over HTTPS with a 200 response.
-- www.clippingguide.com redirects to the canonical apex.
+- www.clippingguide.com, clippingguide.vercel.app, and clippingguide-somnath6646s-projects.vercel.app use Vercel project-domain 308 redirects to the canonical apex. Live checks confirm nested paths and query strings are preserved, and the canonical destination returns 200 without an unintended noindex. Keep these persistent domain settings during future deployments; the source-config hostname redirects did not take effect in the live Astro deployment and were removed.
 - Namecheap BasicDNS: apex A record 216.198.79.1, www CNAME c21e442d13bfe336.vercel-dns-017.com. Both records verified on the authoritative nameserver.
 - The current publication design is search-first, with compact editorial content and no decorative ocean hero or repeated image thumbnails.
 - Fourteen original guides, the free calculator/checklist, all canonical HTML routes, Markdown exports, the JSON guide index, RSS, robots, and sitemap are deployed.
