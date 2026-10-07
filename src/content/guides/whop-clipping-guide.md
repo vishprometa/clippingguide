@@ -54,6 +54,8 @@ Keep a copy of the exported file, published post URL, source details, and submis
 
 Use [the publishing checklist](/tools/clip-checklist/) plus any campaign-specific items. The general checklist does not replace the brief.
 
+For a campaign that allows TikTok posts, use the [TikTok upload and disclosure walkthrough](/guides/how-to-start-clipping-on-tiktok/) before submitting the post. Your campaign's payout rules and TikTok's Creator Rewards requirements are separate.
+
 ## Estimate eligible views, not just total views
 
 An illustrative calculation: 80,000 total views, 50% qualifying, and a hypothetical rate of $1.80 per 1,000 eligible views would produce $72 before caps, fees, and expenses. Those values are examples, not typical campaign results.

@@ -1,6 +1,6 @@
 # Clipping Guide launch status
 
-Updated October 6, 2026.
+Updated October 7, 2026.
 
 ## Live deployment
 
@@ -8,7 +8,7 @@ Updated October 6, 2026.
 - www.clippingguide.com, clippingguide.vercel.app, and clippingguide-somnath6646s-projects.vercel.app use Vercel project-domain 308 redirects to the canonical apex. Live checks confirm nested paths and query strings are preserved, and the canonical destination returns 200 without an unintended noindex. Keep these persistent domain settings during future deployments; the source-config hostname redirects did not take effect in the live Astro deployment and were removed.
 - Namecheap BasicDNS: apex A record 216.198.79.1, www CNAME c21e442d13bfe336.vercel-dns-017.com. Both records verified on the authoritative nameserver.
 - The current publication design is search-first, with compact editorial content and no decorative ocean hero or repeated image thumbnails.
-- Fourteen original guides, the free calculator/checklist, all canonical HTML routes, Markdown exports, the JSON guide index, RSS, robots, and sitemap are deployed.
+- Fifteen original guides, the free calculator/checklist, all canonical HTML routes, Markdown exports, the JSON guide index, RSS, robots, and sitemap are deployed. The TikTok first-post guide answers a query observed in the October 6 US/English autocomplete research; its current official posting, rewards, and disclosure sources were verified October 7 through public browser pages.
 - Vercel Web Analytics is installed and enabled; its live script returns 200.
 
 ## Search setup

@@ -73,3 +73,5 @@ Agree the scope before a paid project: who chooses the moments, where the files 
 ## How to start clipping for free
 
 Practice on an authorized recording using editing features available in your existing tools. Verify that the final export meets your needs before committing to a paid feature. Our [tool-selection guide](/guides/clipping-tools/) explains how to compare the actual workflow and current plan restrictions.
+
+If TikTok is your destination, follow the [TikTok first-post workflow](/guides/how-to-start-clipping-on-tiktok/) after exporting. It covers the publishing account, audience settings, commercial disclosures, and the difference between campaign payments and Creator Rewards.

@@ -143,9 +143,24 @@
     },
     {
       "query": "how to start clipping on tiktok",
-      "action": "research queue; current official full documentation could not be retrieved through the search tool, so a detailed new guide is pending source verification",
+      "action": "publish original TikTok first-post guide after source verification",
       "volume": null,
-      "difficulty": null
+      "difficulty": null,
+      "status": "source-verified; publication tracked in launch and runtime records",
+      "url": "https://clippingguide.com/guides/how-to-start-clipping-on-tiktok/",
+      "demandChecked": "2026-10-06",
+      "sourceChecked": "2026-10-07",
+      "region": "US",
+      "language": "en",
+      "evidence": "The query was present in the recorded Google autocomplete response for how to start clipping. Directional intent evidence; no volume estimate.",
+      "existingOverlap": "The general beginner guide covers selecting and editing a moment. The new page focuses on the TikTok publishing account, app versus browser upload, privacy carryover, disclosures and payment-model distinctions.",
+      "usefulDifference": "A documented first-post workflow and a fictional editing example, with direct current TikTok Help Center sources. Contextual links added from the beginner and Whop guides.",
+      "sourceVerificationMethod": "Public pages in the signed-in browser environment, read without logging into TikTok or publishing a TikTok post. The old support URLs redirected to the current public Help Center.",
+      "sources": [
+        "https://www.tiktok.com/support/faq_detail?id=7581826684085606968&category=web_account",
+        "https://www.tiktok.com/support/faq_detail?id=7581821550694013452&category=web_account",
+        "https://www.tiktok.com/support/faq_detail?id=7636670088170904085&category=web_account"
+      ]
     }
   ]
 }
