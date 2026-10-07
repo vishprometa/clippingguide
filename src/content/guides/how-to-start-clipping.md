@@ -1,10 +1,10 @@
 ---
 title: 'How to Start Clipping: Make Your First Video Clip'
-description: 'A practical first-project walkthrough: choose authorized footage, identify one complete idea, trim it, add captions, and check the export.'
+description: 'Make your first video clip from authorized footage. Learn trimming, captions, export checks, and a practical YouTube Shorts upload workflow.'
 topic: getting-started
 level: Beginner
 published: '2026-10-06'
-updated: '2026-10-06'
+updated: '2026-10-07'
 answer: 'Start with one recording you own or have permission to use. Pick a complete moment, trim it without changing its meaning, reframe for your destination, correct the captions, and watch the exported file before posting.'
 image: editing
 featured: false
@@ -14,6 +14,16 @@ sources:
     url: https://www.capcut.com/resource/how-to-add-subtitle-in-capcut
   - title: Primal Video on finishing an edit
     url: https://www.youtube.com/watch?v=1dd3zo7ELj4
+  - title: YouTube Shorts uploads from a computer
+    url: https://support.google.com/youtube/answer/12779649?co=GENIE.Platform%3DDesktop&hl=en
+  - title: YouTube Shorts classification
+    url: https://support.google.com/youtube/answer/15424877?hl=en
+  - title: YouTube upload details, checks, and visibility
+    url: https://support.google.com/youtube/answer/57407?co=GENIE.Platform%3DDesktop&hl=en
+  - title: YouTube related video requirements
+    url: https://support.google.com/youtube/answer/14075157?hl=en
+  - title: YouTube reused-content monetization policy
+    url: https://support.google.com/youtube/answer/1311392?hl=en
 ---
 
 ## Give the project a small scope
@@ -55,6 +65,22 @@ Export a file rather than trusting the editor preview. Watch that file on a phon
 Ask someone unfamiliar with the full recording what the clip means. If they misunderstand the subject, restore the missing context before adding more effects. A clarity problem is rarely solved by a more elaborate transition.
 
 Use the [publishing checklist](/tools/clip-checklist/) as your final pass. When you post, use an accurate title and link to the original source where relevant.
+
+## How to start clipping on YouTube
+
+Make one complete clip from authorized footage, export it, and upload it to the intended YouTube channel. For a standard channel uploading now, YouTube [classifies square or vertical videos up to three minutes as Shorts](https://support.google.com/youtube/answer/15424877?hl=en). Our [export settings guide](/guides/vertical-video-export-settings/) explains how to prepare a portrait file without stretching the picture.
+
+For your first upload from a computer:
+
+1. Confirm whose channel should publish the clip. If you are editing for a client, agree whether you deliver the file or publish on an account they authorize. In YouTube Studio, use **Create → Upload videos** and choose the checked export, following the [official Shorts upload instructions](https://support.google.com/youtube/answer/12779649?co=GENIE.Platform%3DDesktop&hl=en).
+2. Give it a title that describes the actual moment. Include useful source credit in the description, and complete the audience and applicable disclosure settings accurately. Choose **Private** while you review your first upload; do not rely on an account's default visibility. YouTube documents these controls in its [upload workflow](https://support.google.com/youtube/answer/57407?co=GENIE.Platform%3DDesktop&hl=en).
+3. Wait for the picture quality you need to finish processing, then watch the processed upload. Check the first frame, speech, crop changes, and caption edges. Review any copyright issues in the upload's Checks step. A clear check is not a guarantee against later claims and does not establish permission.
+4. Once the upload is correct, deliberately choose **Public** or a publication schedule. Keep the post URL, source record, and editing notes together so you can review the result later.
+5. If a full video is on the same channel, consider adding it as a [Related Video](https://support.google.com/youtube/answer/14075157?hl=en). This requires advanced feature access, and the destination must be public or unlisted. The feature selects content from your channel; it is not a way to link another creator's channel as the related video.
+
+**Fictional practice example:** from your own eight-minute bread demonstration, make a 45-second clip showing sticky dough and the adjustment that fixes it. A title such as “How to tell when bread dough is too wet” identifies the takeaway. Save the upload privately, inspect whether the dough and captions remain visible on a phone, then correct the crop before publishing. The 45-second duration is a choice for this example, not an ideal length for every Short.
+
+Keep permission, publication, and monetization separate. YouTube's [reused-content policy](https://support.google.com/youtube/answer/1311392?hl=en) can apply even with the original creator's permission. Adding captions or trimming a repost does not guarantee monetization. Read our [permissions guide](/guides/clipping-permissions/) before building a channel around someone else's recordings.
 
 ## Decide what to practice next
 

@@ -161,6 +161,30 @@
         "https://www.tiktok.com/support/faq_detail?id=7581821550694013452&category=web_account",
         "https://www.tiktok.com/support/faq_detail?id=7636670088170904085&category=web_account"
       ]
+    },
+    {
+      "query": "how to start clipping on youtube",
+      "action": "substantively update the existing beginner guide instead of creating an overlapping page",
+      "status": "source-verified; publication tracked in launch and runtime records",
+      "url": "https://clippingguide.com/guides/how-to-start-clipping/#how-to-start-clipping-on-youtube",
+      "demandChecked": "2026-10-06",
+      "sourceChecked": "2026-10-07",
+      "region": "US",
+      "language": "en",
+      "evidence": "The query is present in the recorded Google autocomplete response for how to start clipping. Directional intent evidence, not a volume estimate. Search Console query metrics remain unavailable while processing.",
+      "evidenceSource": "https://suggestqueries.google.com/complete/search?client=firefox&hl=en&gl=us&q=how%20to%20start%20clipping",
+      "monthlyVolume": null,
+      "difficulty": null,
+      "existingOverlap": "The beginner guide already explains editing a first clip; the export guide already covers vertical file settings. Preserve both URLs and add the missing publishing steps to the beginner guide.",
+      "usefulDifference": "A documented YouTube Studio first-upload workflow, explicit channel and visibility choices, processed-file checks, related-video limitations, a fictional bread-demo example, and the distinction between permission and monetization. Contextual inbound link added from the export guide.",
+      "sourceVerificationMethod": "Current official YouTube Help pages read October 7. Documentation-based guidance; no firsthand upload or earnings claim.",
+      "sources": [
+        "https://support.google.com/youtube/answer/12779649?co=GENIE.Platform%3DDesktop&hl=en",
+        "https://support.google.com/youtube/answer/15424877?hl=en",
+        "https://support.google.com/youtube/answer/57407?co=GENIE.Platform%3DDesktop&hl=en",
+        "https://support.google.com/youtube/answer/14075157?hl=en",
+        "https://support.google.com/youtube/answer/1311392?hl=en"
+      ]
     }
   ]
 }

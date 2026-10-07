@@ -55,6 +55,8 @@ Watch the exported file locally before uploading. Confirm the picture shape, aud
 
 YouTube's official guidance currently supports Shorts up to three minutes under its classification rules. Check the linked page for the conditions and current handling of copyrighted music. Do not assume a duration that worked in an old tutorial is the platform's present limit.
 
+After the export passes your checks, use the [YouTube first-upload walkthrough](/guides/how-to-start-clipping/#how-to-start-clipping-on-youtube) to choose the publishing channel, review a private upload, and check the processed result before making it public.
+
 ## Troubleshoot the visible problem
 
 If the picture is soft, inspect the original quality and crop before raising the bitrate. If captions are fuzzy, confirm they were generated at the project resolution and not enlarged from a small graphic. If audio drifts, compare the source and exported frame-rate workflow.

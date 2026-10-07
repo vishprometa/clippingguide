@@ -13,7 +13,7 @@ The generic phrase clipping guide has mixed intent, including animal grooming an
 | Observed relevant query | Reader need | Action |
 | --- | --- | --- |
 | how to start clipping on tiktok | First upload and payment-model clarity | Maintain /guides/how-to-start-clipping-on-tiktok/ |
-| how to start clipping on youtube | Publishing Shorts and monetization distinctions | Extend existing beginner/export guides before creating an overlapping page |
+| how to start clipping on youtube | Publishing Shorts and monetization distinctions | Maintain the YouTube section of /guides/how-to-start-clipping/ and its contextual export-guide link |
 | how to start clipping for streamers | Permission, finding a complete stream moment, and delivery | Improve the existing starter guide and link VTuber guidance |
 | how to start clipping on whop; whop clipping tutorial | Campaign requirements and eligible payout process | Maintain /guides/whop-clipping-guide/ |
 | video clipping software free; video clipping ai free | Tool choice, limitations, export restrictions | Maintain /guides/clipping-tools/ with verified current terms |

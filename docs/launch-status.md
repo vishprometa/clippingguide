@@ -9,6 +9,7 @@ Updated October 7, 2026.
 - Namecheap BasicDNS: apex A record 216.198.79.1, www CNAME c21e442d13bfe336.vercel-dns-017.com. Both records verified on the authoritative nameserver.
 - The current publication design is search-first, with compact editorial content and no decorative ocean hero or repeated image thumbnails.
 - Fifteen original guides, the free calculator/checklist, all canonical HTML routes, Markdown exports, the JSON guide index, RSS, robots, and sitemap are deployed. The TikTok first-post guide answers a query observed in the October 6 US/English autocomplete research; its current official posting, rewards, and disclosure sources were verified October 7 through public browser pages.
+- The beginner guide now includes a YouTube Shorts first-upload walkthrough for the observed query how to start clipping on youtube. It covers channel ownership, visibility, upload checks, related-video requirements, a fictional practice example, and the distinction between permission and monetization. Official YouTube sources were checked October 7. This expands an existing guide rather than adding a duplicate article; the site remains at fifteen guides and twenty-nine sitemap URLs.
 - Vercel Web Analytics is installed and enabled; its live script returns 200.
 
 ## Search setup
