@@ -8,6 +8,8 @@ export const topics = [
     description: 'Understand the basics and make your first clip.',
     icon: 'ph:scissors',
     label: 'Getting started',
+    seoDescription:
+      'Learn what video clipping is, choose footage you can use, and follow a beginner workflow to edit, check, and publish your first clip.',
   },
   {
     id: 'editing',
@@ -15,6 +17,8 @@ export const topics = [
     description: 'Find the moment. Shape the story. Keep it readable.',
     icon: 'ph:sliders-horizontal',
     label: 'Editing',
+    seoDescription:
+      'Improve video clips with practical guides to choosing moments, CapCut editing, podcast framing, caption accuracy, timing, and audio.',
   },
   {
     id: 'publishing',
@@ -22,6 +26,8 @@ export const topics = [
     description: 'Export, check permissions, and learn from your results.',
     icon: 'ph:upload-simple',
     label: 'Publishing',
+    seoDescription:
+      'Prepare video clips for publishing with export settings, permissions checks, readable captions, and a simple method for reviewing performance.',
   },
   {
     id: 'earning',
@@ -29,6 +35,8 @@ export const topics = [
     description: 'Campaign rules, eligible views, and realistic expectations.',
     icon: 'ph:chart-line-up',
     label: 'Earning',
+    seoDescription:
+      'Understand clipping income: Whop campaign rules, eligible views, payout caps, editing fees, expenses, and realistic reward calculations.',
   },
 ] as const;
 export const allGuides = async () =>

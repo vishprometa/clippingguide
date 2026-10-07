@@ -1,5 +1,5 @@
 ---
-title: 'CapCut Captions Not Working? Find the Failure Before You Fix It'
+title: 'CapCut captions not working: common fixes'
 description: 'Separate caption-generation, visibility, and export problems in CapCut. Check a small sample, narrow the cause, and preserve your project while troubleshooting.'
 topic: editing
 level: Beginner

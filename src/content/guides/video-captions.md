@@ -1,5 +1,5 @@
 ---
-title: 'Captions for Video Clips: Make Every Word Easy to Follow'
+title: 'Video captions: accuracy and readability'
 description: 'Correct automatic transcripts, choose readable caption styling, identify speakers accessibly, and keep text clear of platform controls.'
 topic: editing
 level: Beginner

@@ -1,5 +1,5 @@
 ---
-title: 'Vertical Video Export Settings for Clear, Watchable Clips'
+title: 'Vertical video export settings'
 description: 'Understand aspect ratio, resolution, frame rate, and export quality. Choose settings that fit the source and verify the finished file.'
 topic: publishing
 level: Beginner

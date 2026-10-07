@@ -1,5 +1,5 @@
 ---
-title: "Before You Clip Someone Else's Video: Permission & Credit"
+title: 'Clipping permissions: what to check'
 description: "Check the footage, music, artwork, platform, commercial use, and creator rules before editing and posting someone else's video."
 topic: publishing
 level: Beginner

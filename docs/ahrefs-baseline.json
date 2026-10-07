@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-10-06",
+  "project": "Clipping Guide",
+  "projectId": 10492999,
+  "overview": "https://app.ahrefs.com/site-audit/10492999/overview",
+  "ownershipVerified": true,
+  "healthScore": 100,
+  "errors": 0,
+  "initialWarnings": 32,
+  "initialNotices": 48,
+  "schedule": {
+    "frequency": "weekly",
+    "day": "Tuesday",
+    "timeWindow": "17:00-17:59",
+    "timezone": "America/Los_Angeles"
+  },
+  "warningReview": {
+    "longTitles": {
+      "count": 7,
+      "action": "Shortened the seven affected page titles; no URL changes."
+    },
+    "shortDescriptions": {
+      "count": 5,
+      "action": "Added fuller SEO descriptions for four topic pages and the privacy page."
+    },
+    "noindex": {
+      "count": 17,
+      "action": "Intentional on machine-readable duplicate copies; canonical HTML remains indexable."
+    },
+    "redirects": {
+      "count": 3,
+      "action": "Intentional HTTP/HTTPS and www/apex canonicalization."
+    }
+  },
+  "plan": "Free; no paid upgrade made"
+}

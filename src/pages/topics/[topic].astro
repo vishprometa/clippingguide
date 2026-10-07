@@ -9,7 +9,7 @@ const { topic } = Astro.props;
 const guides = (await allGuides()).filter((guide) => guide.data.topic === topic.id);
 ---
 
-<Base title={`${topic.label}: Video Clipping Guides`} description={topic.description}>
+<Base title={`${topic.label}: Video Clipping Guides`} description={topic.seoDescription}>
   <div class="wrap page-intro">
     <a class="text-link" href="/guides/">
       All guides

@@ -1,5 +1,5 @@
 ---
-title: 'How Much Can Clippers Earn? Understand the Actual Math'
+title: 'How much can clippers earn?'
 description: 'Separate editing fees, campaign rewards, and platform monetization. Work through eligible views, payout caps, expenses, and your time.'
 topic: earning
 level: Beginner

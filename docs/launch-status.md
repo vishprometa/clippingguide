@@ -1,30 +1,30 @@
-# Launch status
+# Clipping Guide launch status
 
-Recorded October 6, 2026.
+Updated October 6, 2026.
 
-- The site is deployed on Vercel and publicly accessible at https://clippingguide.vercel.app.
-- The production domain aliases clippingguide.com and www.clippingguide.com are attached; www redirects to the apex.
-- Vercel Web Analytics is installed and enabled.
-- The canonical domain DNS is still pointed at Namecheap parking. Browser control was interrupted by other activity in Brave, so no DNS edits were saved.
-- Ahrefs is connected, but its MCP API returned Insufficient plan. Creating and verifying the Site Audit project in the signed-in web dashboard remains pending. Do not upgrade a paid plan.
-- Search Console property verification and sitemap submission remain pending. GSC Wizard was not authenticated in the original check and is no longer an available tool in this session.
-- The hourly creator-updates and health heartbeat is active: clipping-guide-creator-updates-and-site-health.
+## Live deployment
 
-## DNS records to finish
+- Canonical site: https://clippingguide.com, verified over HTTPS with a 200 response.
+- www.clippingguide.com redirects to the canonical apex.
+- Namecheap BasicDNS: apex A record 216.198.79.1, www CNAME c21e442d13bfe336.vercel-dns-017.com. Both records verified on the authoritative nameserver.
+- The current publication design is search-first, with compact editorial content and no decorative ocean hero or repeated image thumbnails.
+- Fourteen original guides, the free calculator/checklist, all canonical HTML routes, Markdown exports, the JSON guide index, RSS, robots, and sitemap are deployed.
+- Vercel Web Analytics is installed and enabled; its live script returns 200.
 
-Use the existing Namecheap BasicDNS zone. Vercel's domain-configuration API returned these preferred targets:
+## Search setup
 
-| Type | Host | Value |
-| --- | --- | --- |
-| A | @ | 216.198.79.1 |
-| CNAME | www | c21e442d13bfe336.vercel-dns-017.com |
+- Google Search Console domain property sc-domain:clippingguide.com is verified through the Namecheap DNS TXT record.
+- The sitemap index and direct URL sitemap were submitted successfully. Google's initial processing status is Could not fetch / not yet read; public XML validation, normal HTTP fetches, and GET/HEAD with a Googlebot user-agent succeed. This status remains pending and is monitored. Google's Live URL Inspection independently confirms homepage fetchability.
+- Google's Live URL Inspection confirms the homepage is available to Google.
+- The homepage indexing request was accepted and placed in Google's priority crawl queue. This is not confirmation that it has been indexed.
+- Ahrefs project Clipping Guide (ID 10492999) is created and ownership is verified through the published HTML tag. The first crawl reported Health Score 100 and zero errors. Weekly audits are scheduled Tuesdays, 5:00-5:59 PM, Pacific Time (Los Angeles). The account is on the Free plan; API keyword metrics/rank tracking are unavailable, and no paid upgrade is authorized.
 
-Replace only the default apex URL redirect and www parking record. Preserve mail and unrelated records. Vercel also accepts the legacy A target 76.76.21.21, which its CLI suggested. Re-read the current Vercel configuration before applying records if these instructions are used later.
+## Publishing and monitoring
 
-After DNS resolves to Vercel, verify HTTPS on the apex, the www redirect, the homepage, a guide, the guide JSON and Markdown endpoint, robots, sitemap, and the analytics script. Then create/verify the Ahrefs project, start a Site Audit crawl, and enable an appropriate recurring crawl supported by the current plan. Verify Google Search Console ownership and submit https://clippingguide.com/sitemap-index.xml.
+The hourly heartbeat clipping-guide-creator-updates-and-site-health is active. Publishing is search-led, as instructed by the user. Read search-strategy.md and search-demand.json. Creator videos are research inputs for an identified query, not automatic publication triggers. Unknown volume and difficulty remain unknown.
 
-For recurring runs, this DNS/account state is an already-known setup blocker. Stay quiet while it is unchanged; check the public Vercel preview for deployment health, and notify when the canonical domain begins serving the site or a new actionable failure appears. Do not treat a Vercel login page or a Namecheap parking page as a successful site check.
+Preserve the live design and URLs. Do not reintroduce the rejected decorative imagery. Monitor the verified Ahrefs project and Google sitemap processing. Do not repeat known pending-state notifications while nothing actionable changed, and do not submit repeated indexing requests for the same URL in an effort to speed it up.
 
-## Visual revision
+## Baseline audit follow-up
 
-The user rejected the decorative ocean hero on October 6. The revised design is a compact, search-first editorial publication. Do not reintroduce large decorative generated images or repeat stock-style thumbnails in the guide library. Preserve the original artwork as archived source assets.
+The first Ahrefs report flagged seven long titles and five short descriptions. The source was updated to shorten the seven affected titles and give topic/privacy pages useful search descriptions. Internal links, metadata, schema JSON, sitemap entries, and all fourteen authored guide endpoints pass the build audit. Noindex on seventeen machine-readable duplicate copies is intentional, and HTTP/www redirects are intentional.

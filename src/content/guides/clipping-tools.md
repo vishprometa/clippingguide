@@ -1,5 +1,5 @@
 ---
-title: 'Video Clipping Tools: Choose an Editor for Your Workflow'
+title: 'Video clipping tools: choosing an editor'
 description: 'Compare manual editing, transcript-based editing, and automated clip discovery. Choose tools by your footage and needs, not an unsupported viral promise.'
 topic: getting-started
 level: Beginner
