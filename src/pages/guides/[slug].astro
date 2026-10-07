@@ -22,8 +22,8 @@ const schema = {
       headline: guide.data.title,
       description: guide.data.description,
       image: `${SITE}/images/${guide.data.image}.webp`,
-      datePublished: `${guide.data.published}T12:00:00-07:00`,
-      dateModified: `${guide.data.updated}T12:00:00-07:00`,
+      datePublished: guide.data.published,
+      dateModified: guide.data.updated,
       author: { '@type': 'Organization', name: 'Clipping Guide editorial', url: `${SITE}/about/` },
       publisher: { '@id': `${SITE}/#organization` },
       mainEntityOfPage: url,
@@ -111,7 +111,7 @@ const schema = {
           <section class="sources">
             <h2>Sources & further reading</h2>
             <p>
-              Official documentation checked on {formatDate(guide.data.updated)}. Platform features
+              Guide updated on {formatDate(guide.data.updated)}. Platform features
               and rules can change.
             </p>
             <ul>

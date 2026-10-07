@@ -21,6 +21,8 @@ class Page(HTMLParser):
         self.canonical = None
         self.h1s = 0
         self.schemas = []
+        self.article_dates = {}
+        self.visible_dates = []
         self.active = None
         self.buffer = []
         self.feed(path.read_text())
@@ -35,6 +37,10 @@ class Page(HTMLParser):
             self.h1s += 1
         if tag == "meta" and attrs.get("name") == "description":
             self.description = attrs.get("content")
+        if tag == "meta" and attrs.get("property") in ("article:published_time", "article:modified_time"):
+            self.article_dates[attrs["property"]] = attrs.get("content")
+        if tag == "time" and "datetime" in attrs:
+            self.visible_dates.append(attrs["datetime"])
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical = attrs.get("href")
         if tag == "title" or (tag == "script" and attrs.get("type") == "application/ld+json"):
@@ -58,6 +64,29 @@ class Page(HTMLParser):
 def target_file(path):
     target = ROOT / unquote(path).lstrip("/")
     return target / "index.html" if path.endswith("/") else target
+
+def guide_date_errors(page, guide):
+    article = next(
+        (node
+         for schema in page.schemas
+         for node in schema.get("@graph", [schema])
+         if node.get("@type") == "Article"),
+        {},
+    )
+    dates = {
+        "datePublished": (article.get("datePublished"), guide["published"]),
+        "dateModified": (article.get("dateModified"), guide["updated"]),
+        "article:published_time": (page.article_dates.get("article:published_time"), guide["published"]),
+        "article:modified_time": (page.article_dates.get("article:modified_time"), guide["updated"]),
+    }
+    errors = [
+        f"Guide {guide['id']}: {field} differs from its recorded calendar date"
+        for field, (actual, recorded) in dates.items()
+        if actual != recorded
+    ]
+    if guide["updated"] not in page.visible_dates:
+        errors.append(f"Guide {guide['id']}: visible update date differs from its recorded date")
+    return errors
 
 def main():
     pages = [Page(path) for path in ROOT.rglob("*.html")]
@@ -94,6 +123,15 @@ def main():
     for guide in index["guides"]:
         if not target_file(urlparse(guide["url"]).path).exists() or not target_file(urlparse(guide["markdown"]).path).exists():
             errors.append(f"Guide {guide['id']} is missing an HTML or Markdown endpoint")
+        page = by_path.get(target_file(urlparse(guide["url"]).path).resolve())
+        if page:
+            errors.extend(guide_date_errors(page, guide))
+    feed = ET.fromstring((ROOT / "rss.xml").read_text())
+    feed_links = {item.findtext("link") for item in feed.findall("./channel/item")}
+    feed_guids = {item.findtext("guid") for item in feed.findall("./channel/item")}
+    guide_urls = {guide["url"] for guide in index["guides"]}
+    if feed_links != guide_urls or feed_guids != guide_urls:
+        errors.append("RSS item links or stable identities differ from the guide index")
     sitemap = ET.fromstring((ROOT / "sitemap-0.xml").read_text())
     urls = [entry.text for entry in sitemap.iter() if entry.tag.endswith("loc")]
     if any(not url.endswith("/") or not target_file(urlparse(url).path).exists() for url in urls):

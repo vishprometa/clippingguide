@@ -77,8 +77,8 @@ const baseSchema = {
     <meta property="og:image" content={new URL(image, SITE).href} />
     {article && (
       <>
-        <meta property="article:published_time" content={`${article.published}T12:00:00-07:00`} />
-        <meta property="article:modified_time" content={`${article.updated}T12:00:00-07:00`} />
+        <meta property="article:published_time" content={article.published} />
+        <meta property="article:modified_time" content={article.updated} />
         <meta property="article:section" content={article.topic} />
       </>
     )}

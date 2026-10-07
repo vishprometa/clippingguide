@@ -8,7 +8,7 @@ export async function GET() {
     items: (await allGuides()).map((guide) => ({
       title: guide.data.title,
       description: guide.data.description,
-      pubDate: new Date(`${guide.data.published}T12:00:00Z`),
+      // Calendar dates do not establish the timestamp required by RSS pubDate.
       link: guideUrl(guide),
     })),
     customData: '<language>en-us</language>',

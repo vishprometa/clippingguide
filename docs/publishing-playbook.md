@@ -27,6 +27,10 @@ Prefer a substantive update to an existing guide when the search intent overlaps
 
 Do not publish verbatim transcripts, copied outlines, copied assets, or summaries that replace a creator's video. Do not invent testing, experience, credentials, views, earnings, rankings, product access, or sponsorship. Keep any quotation short and compliant. Explain promotional claims as claims. Use the actual publication date, and only advance update dates for substantive changes.
 
+The guide metadata currently records calendar dates, not publication clock times. Use those ISO dates directly in Article schema, Open Graph, and visible dates. Do not append an assumed time or timezone. RSS pubDate is optional and requires a real timestamp, so omit it while that timestamp is unknown; retain stable item links and GUIDs. Google says time is optional for byline dates: https://developers.google.com/search/docs/appearance/publication-dates.
+
+A guide's update date does not prove that every existing source was rechecked that day. Record actual source checks in the search-demand ledger and describe the public date as the guide update date; avoid implying a blanket source recheck.
+
 The public article is a Markdown file in src/content/guides/ with the schema in src/content.config.ts. Match the established four topic IDs. Use normal readable prose. Each article must have at least one contextual link from an existing relevant guide or index, not just an RSS entry.
 
 ## Verification and release
@@ -45,4 +49,3 @@ Monitor live HTTP status, robots, sitemap, internal links, analytics availabilit
 Measure progress against actual data: relevant non-branded impressions and clicks, indexed useful pages, query positions, guide engagement, and tool usage. Do not claim first-place rankings or AI citations without evidence. llms.txt is a discovery convenience; semantic HTML, linked sources, dated content, and crawlable public text remain the foundation.
 
 Keep scheduled runs quiet if nothing relevant changed. Notify on a verified new publication, a material content correction, a live failure, repeated source-fetch failures, or a required user action. Do not post messages to creators or third-party communities unless separately authorized.
-
